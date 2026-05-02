@@ -1,0 +1,174 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Collection | AURUM</title>
+  <script src="https://cdn.tailwindcss.com"></script>
+  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400;0,500;1,400;1,500&family=Noto+Sans+JP:wght@300;400&display=swap" rel="stylesheet">
+  <style>
+    :root { --gold: #c4a35a; --dark: #0d0d0d; --mid: #1a1a1a; --warm-white: #f5f0e8; }
+    body { font-family: 'Noto Sans JP', sans-serif; background: var(--dark); color: var(--warm-white); }
+    .playfair { font-family: 'Playfair Display', serif; }
+    .nav-link { color: #888; transition: color 0.3s; }
+    .nav-link:hover, .nav-link.active { color: var(--gold); }
+    .filter-btn.active { color: var(--gold); border-bottom: 1px solid var(--gold); }
+    .piece-card { transition: transform 0.5s ease; }
+    .piece-card:hover { transform: translateY(-6px); }
+    .piece-card:hover img { opacity: 1; }
+  </style>
+</head>
+<body>
+
+  <div class="border-b text-xs py-2" style="background:#111;border-color:#222;color:#555">
+    <div class="max-w-6xl mx-auto px-6">
+      <a href="../../index.html" class="hover:text-gray-300 transition">← デザイン一覧に戻る</a>
+      <span class="mx-2" style="color:#333">|</span>
+      <span style="color:#444">サンプル: Luxury — ジュエリー「AURUM」</span>
+    </div>
+  </div>
+
+  <nav class="sticky top-0 z-50 border-b" style="background:rgba(13,13,13,0.97);border-color:#222">
+    <div class="max-w-6xl mx-auto px-6 py-5 flex items-center justify-between">
+      <a href="index.html" class="playfair text-2xl tracking-[0.3em]" style="color:var(--gold)">AURUM</a>
+      <div class="hidden md:flex items-center gap-10 text-xs tracking-[0.15em] uppercase">
+        <a href="index.html" class="nav-link">Home</a>
+        <a href="about.html" class="nav-link">About</a>
+        <a href="products.html" class="nav-link active" style="color:var(--gold)">Collection</a>
+        <a href="news.html" class="nav-link">News</a>
+        <a href="contact.html" class="nav-link border px-5 py-2.5 transition hover:bg-yellow-600/10" style="border-color:var(--gold);color:var(--gold)">Contact</a>
+      </div>
+    </div>
+  </nav>
+
+  <section class="py-16 text-center border-b" style="border-color:#222">
+    <p class="text-xs tracking-[0.4em] uppercase mb-3" style="color:var(--gold)">2025 SS</p>
+    <h1 class="playfair text-5xl font-normal" style="color:var(--warm-white)">Collection</h1>
+  </section>
+
+  <section class="py-16" style="background:var(--mid)">
+    <div class="max-w-6xl mx-auto px-6">
+
+      <!-- Filter -->
+      <div class="flex gap-8 text-xs tracking-widest uppercase mb-14 border-b pb-5" style="border-color:#222">
+        <button onclick="filterPieces('all')" data-tab="all" class="filter-btn active pb-5 -mb-5 transition" style="color:var(--gold);border-bottom:1px solid var(--gold)">All</button>
+        <button onclick="filterPieces('ring')" data-tab="ring" class="filter-btn pb-5 -mb-5 transition hover:opacity-70" style="color:#666">Ring</button>
+        <button onclick="filterPieces('necklace')" data-tab="necklace" class="filter-btn pb-5 -mb-5 transition hover:opacity-70" style="color:#666">Necklace</button>
+        <button onclick="filterPieces('bracelet')" data-tab="bracelet" class="filter-btn pb-5 -mb-5 transition hover:opacity-70" style="color:#666">Bracelet</button>
+        <button onclick="filterPieces('earring')" data-tab="earring" class="filter-btn pb-5 -mb-5 transition hover:opacity-70" style="color:#666">Earring</button>
+      </div>
+
+      <!-- Grid -->
+      <div id="piece-grid" class="grid grid-cols-2 md:grid-cols-3 gap-8">
+
+        <div class="piece-card group" data-cat="ring">
+          <div class="overflow-hidden mb-4 border" style="aspect-ratio:1;border-color:#222;background:#111">
+            <img src="https://picsum.photos/seed/r1/500/500" alt="ダイヤリング" class="w-full h-full object-cover opacity-70 transition-opacity duration-500">
+          </div>
+          <p class="text-xs tracking-widest uppercase mb-1.5" style="color:var(--gold)">Ring</p>
+          <p class="text-sm mb-1" style="color:var(--warm-white)">ダイヤモンド ソリテール リング</p>
+          <p class="text-xs" style="color:#666">K18 / Pt900 — ¥380,000〜</p>
+        </div>
+
+        <div class="piece-card group" data-cat="ring">
+          <div class="overflow-hidden mb-4 border" style="aspect-ratio:1;border-color:#222;background:#111">
+            <img src="https://picsum.photos/seed/r2/500/500" alt="エタニティリング" class="w-full h-full object-cover opacity-70 transition-opacity duration-500">
+          </div>
+          <p class="text-xs tracking-widest uppercase mb-1.5" style="color:var(--gold)">Ring</p>
+          <p class="text-sm mb-1" style="color:var(--warm-white)">エタニティリング ハーフ</p>
+          <p class="text-xs" style="color:#666">Pt950 — ¥220,000〜</p>
+        </div>
+
+        <div class="piece-card group" data-cat="necklace">
+          <div class="overflow-hidden mb-4 border" style="aspect-ratio:1;border-color:#222;background:#111">
+            <div class="absolute top-2 right-2 text-xs px-2 py-0.5 z-10" style="background:var(--gold);color:#0d0d0d">New</div>
+            <img src="https://picsum.photos/seed/n1/500/500" alt="ネックレス" class="w-full h-full object-cover opacity-70 transition-opacity duration-500">
+          </div>
+          <p class="text-xs tracking-widest uppercase mb-1.5" style="color:var(--gold)">Necklace</p>
+          <p class="text-sm mb-1" style="color:var(--warm-white)">ゴールド ペンダントネックレス</p>
+          <p class="text-xs" style="color:#666">K18YG — ¥145,000〜</p>
+        </div>
+
+        <div class="piece-card group" data-cat="necklace">
+          <div class="overflow-hidden mb-4 border" style="aspect-ratio:1;border-color:#222;background:#111">
+            <img src="https://picsum.photos/seed/n2/500/500" alt="パールネックレス" class="w-full h-full object-cover opacity-70 transition-opacity duration-500">
+          </div>
+          <p class="text-xs tracking-widest uppercase mb-1.5" style="color:var(--gold)">Necklace</p>
+          <p class="text-sm mb-1" style="color:var(--warm-white)">淡水パール ネックレス</p>
+          <p class="text-xs" style="color:#666">K18WG — ¥98,000〜</p>
+        </div>
+
+        <div class="piece-card group" data-cat="bracelet">
+          <div class="overflow-hidden mb-4 border" style="aspect-ratio:1;border-color:#222;background:#111">
+            <img src="https://picsum.photos/seed/b1/500/500" alt="テニスブレス" class="w-full h-full object-cover opacity-70 transition-opacity duration-500">
+          </div>
+          <p class="text-xs tracking-widest uppercase mb-1.5" style="color:var(--gold)">Bracelet</p>
+          <p class="text-sm mb-1" style="color:var(--warm-white)">K18 テニスブレスレット</p>
+          <p class="text-xs" style="color:#666">K18YG — ¥220,000〜</p>
+        </div>
+
+        <div class="piece-card group" data-cat="earring">
+          <div class="overflow-hidden mb-4 border" style="aspect-ratio:1;border-color:#222;background:#111">
+            <img src="https://picsum.photos/seed/e1/500/500" alt="ピアス" class="w-full h-full object-cover opacity-70 transition-opacity duration-500">
+          </div>
+          <p class="text-xs tracking-widest uppercase mb-1.5" style="color:var(--gold)">Earring</p>
+          <p class="text-sm mb-1" style="color:var(--warm-white)">ダイヤモンド スタッドピアス</p>
+          <p class="text-xs" style="color:#666">Pt950 — ¥185,000〜</p>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- Bespoke CTA -->
+  <section class="py-20 text-center" style="background:var(--dark)">
+    <div class="max-w-2xl mx-auto px-6">
+      <p class="text-xs tracking-[0.3em] uppercase mb-4" style="color:var(--gold)">Bespoke Service</p>
+      <h2 class="playfair text-3xl font-normal mb-5" style="color:var(--warm-white)">あなただけの一点を</h2>
+      <p class="text-sm leading-loose mb-8" style="color:#666">ご希望のデザイン・素材・ご予算をお聞かせください。<br>世界にひとつのジュエリーをお作りします。</p>
+      <a href="contact.html" class="inline-block border text-xs tracking-widest uppercase px-10 py-4 transition hover:bg-yellow-600/10" style="border-color:var(--gold);color:var(--gold)">Inquire Now</a>
+    </div>
+  </section>
+
+  <footer class="border-t py-16" style="background:#0a0a0a;border-color:#1a1a1a">
+    <div class="max-w-6xl mx-auto px-6">
+      <div class="flex flex-col md:flex-row justify-between gap-14 mb-12">
+        <div>
+          <p class="playfair text-3xl tracking-[0.3em] mb-3" style="color:var(--gold)">AURUM</p>
+          <p class="text-xs leading-loose" style="color:#555">〒000-0000 ○○県○○市○○町10-11-12<br>TEL: 000-000-0003<br>11:00〜20:00（火曜定休）</p>
+        </div>
+        <div class="text-xs tracking-[0.1em] uppercase">
+          <p class="mb-4" style="color:var(--gold)">Menu</p>
+          <ul class="space-y-3" style="color:#555">
+            <li><a href="index.html" class="hover:text-white transition">Home</a></li>
+            <li><a href="about.html" class="hover:text-white transition">About</a></li>
+            <li><a href="products.html" class="hover:text-white transition">Collection</a></li>
+            <li><a href="news.html" class="hover:text-white transition">News</a></li>
+            <li><a href="contact.html" class="hover:text-white transition">Contact</a></li>
+          </ul>
+        </div>
+      </div>
+      <div class="border-t pt-6 flex justify-between" style="border-color:#1a1a1a">
+        <p class="text-xs" style="color:#333">© 2025 AURUM Fine Jewelry</p>
+        <a href="../../index.html" class="text-xs hover:text-gray-400 transition" style="color:#333">【サンプルサイト】</a>
+      </div>
+    </div>
+  </footer>
+
+  <script>
+    function filterPieces(cat) {
+      document.querySelectorAll('.filter-btn').forEach(b => {
+        b.classList.remove('active');
+        b.style.color = '#666';
+        b.style.borderBottom = 'none';
+      });
+      const btn = document.querySelector(`[data-tab="${cat}"]`);
+      btn.style.color = 'var(--gold)';
+      btn.style.borderBottom = '1px solid var(--gold)';
+      document.querySelectorAll('#piece-grid [data-cat]').forEach(card => {
+        card.style.display = (cat === 'all' || card.dataset.cat === cat) ? 'block' : 'none';
+      });
+    }
+  </script>
+</body>
+</html>

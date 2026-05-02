@@ -1,0 +1,145 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>About | AURUM</title>
+  <script src="https://cdn.tailwindcss.com"></script>
+  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400;0,500;1,400;1,500&family=Noto+Sans+JP:wght@300;400&display=swap" rel="stylesheet">
+  <style>
+    :root { --gold: #c4a35a; --dark: #0d0d0d; --mid: #1a1a1a; --warm-white: #f5f0e8; }
+    body { font-family: 'Noto Sans JP', sans-serif; background: var(--dark); color: var(--warm-white); }
+    .playfair { font-family: 'Playfair Display', serif; }
+    .nav-link { color: #888; transition: color 0.3s; }
+    .nav-link:hover, .nav-link.active { color: var(--gold); }
+  </style>
+</head>
+<body>
+
+  <div class="border-b text-xs py-2" style="background:#111;border-color:#222;color:#555">
+    <div class="max-w-6xl mx-auto px-6">
+      <a href="../../index.html" class="hover:text-gray-300 transition">← デザイン一覧に戻る</a>
+      <span class="mx-2" style="color:#333">|</span>
+      <span style="color:#444">サンプル: Luxury — ジュエリー「AURUM」</span>
+    </div>
+  </div>
+
+  <nav class="sticky top-0 z-50 border-b" style="background:rgba(13,13,13,0.97);border-color:#222">
+    <div class="max-w-6xl mx-auto px-6 py-5 flex items-center justify-between">
+      <a href="index.html" class="playfair text-2xl tracking-[0.3em]" style="color:var(--gold)">AURUM</a>
+      <div class="hidden md:flex items-center gap-10 text-xs tracking-[0.15em] uppercase">
+        <a href="index.html" class="nav-link">Home</a>
+        <a href="about.html" class="nav-link active" style="color:var(--gold)">About</a>
+        <a href="products.html" class="nav-link">Collection</a>
+        <a href="news.html" class="nav-link">News</a>
+        <a href="contact.html" class="nav-link border px-5 py-2.5 transition hover:bg-yellow-600/10" style="border-color:var(--gold);color:var(--gold)">Contact</a>
+      </div>
+    </div>
+  </nav>
+
+  <!-- Page Hero -->
+  <section class="relative overflow-hidden" style="height:60vh">
+    <img src="https://picsum.photos/seed/studio1/1400/700" alt="アトリエ" class="absolute inset-0 w-full h-full object-cover opacity-25">
+    <div class="absolute inset-0" style="background:linear-gradient(to bottom,var(--dark),transparent 40%,var(--dark))"></div>
+    <div class="relative flex flex-col justify-center items-center h-full text-center px-6">
+      <p class="text-xs tracking-[0.4em] uppercase mb-4" style="color:var(--gold)">Our Story</p>
+      <h1 class="playfair text-5xl md:text-6xl font-normal" style="color:var(--warm-white)">About AURUM</h1>
+    </div>
+  </section>
+
+  <!-- Philosophy -->
+  <section class="py-24" style="background:var(--mid)">
+    <div class="max-w-5xl mx-auto px-6 flex flex-col md:flex-row gap-16 items-center">
+      <div class="flex-1">
+        <p class="text-xs tracking-[0.3em] uppercase mb-4" style="color:var(--gold)">Philosophy</p>
+        <h2 class="playfair text-4xl font-normal mb-7 leading-snug" style="color:var(--warm-white)">
+          金は時を超え、<br><em>想いを語り続ける。</em>
+        </h2>
+        <p class="leading-loose text-sm mb-4" style="color:#888">
+          AURUMはラテン語で「金」を意味します。変わらない輝きと永続する価値を持つ金のように、
+          時代を超えて愛され続けるジュエリーを創ることが私たちの使命です。
+        </p>
+        <p class="leading-loose text-sm" style="color:#888">
+          2005年の創業以来、一切の妥協なく素材を選び、職人が魂を込めて一点一点制作しています。
+          それぞれの作品には、お客様の物語と私たちの情熱が宿っています。
+        </p>
+      </div>
+      <div class="flex-1">
+        <div class="relative">
+          <img src="https://picsum.photos/seed/jeweler1/600/700" alt="職人" class="w-full h-96 object-cover opacity-75">
+          <div class="absolute inset-0 border" style="border-color:rgba(196,163,90,0.2);margin:20px"></div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Values -->
+  <section class="py-20 border-y" style="background:var(--dark);border-color:#222">
+    <div class="max-w-6xl mx-auto px-6">
+      <div class="grid grid-cols-1 md:grid-cols-3 gap-12 text-center">
+        <div>
+          <div class="text-4xl mb-5 playfair" style="color:var(--gold)">I</div>
+          <h3 class="text-xs tracking-[0.3em] uppercase mb-3" style="color:var(--gold)">Integrity</h3>
+          <p class="text-xs leading-loose" style="color:#666">素材の真実を伝える。GIA認定ダイヤモンドのみを使用し、証明書とともにお届けします。</p>
+        </div>
+        <div>
+          <div class="text-4xl mb-5 playfair" style="color:var(--gold)">II</div>
+          <h3 class="text-xs tracking-[0.3em] uppercase mb-3" style="color:var(--gold)">Craftsmanship</h3>
+          <p class="text-xs leading-loose" style="color:#666">20年以上の経験を持つ職人が、すべての工程を手作業で丁寧に仕上げます。</p>
+        </div>
+        <div>
+          <div class="text-4xl mb-5 playfair" style="color:var(--gold)">III</div>
+          <h3 class="text-xs tracking-[0.3em] uppercase mb-3" style="color:var(--gold)">Sustainability</h3>
+          <p class="text-xs leading-loose" style="color:#666">リサイクルゴールドと倫理的調達のダイヤモンドを使用。環境への配慮も大切にしています。</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Atelier -->
+  <section class="py-24" style="background:var(--mid)">
+    <div class="max-w-6xl mx-auto px-6">
+      <div class="text-center mb-14">
+        <p class="text-xs tracking-[0.3em] uppercase mb-3" style="color:var(--gold)">Atelier</p>
+        <h2 class="playfair text-4xl font-normal" style="color:var(--warm-white)">Our Workshop</h2>
+      </div>
+      <div class="grid grid-cols-2 md:grid-cols-4 gap-4">
+        <img src="https://picsum.photos/seed/ws1/400/400" alt="" class="w-full h-48 object-cover opacity-70 hover:opacity-90 transition">
+        <img src="https://picsum.photos/seed/ws2/400/400" alt="" class="w-full h-48 object-cover opacity-70 hover:opacity-90 transition">
+        <img src="https://picsum.photos/seed/ws3/400/400" alt="" class="w-full h-48 object-cover opacity-70 hover:opacity-90 transition">
+        <img src="https://picsum.photos/seed/ws4/400/400" alt="" class="w-full h-48 object-cover opacity-70 hover:opacity-90 transition">
+      </div>
+      <p class="text-center mt-8 text-xs leading-loose" style="color:#666">
+        東京・銀座にあるアトリエにて、全作品を制作しています。<br>
+        ご予約いただくとアトリエツアーもご参加いただけます。
+      </p>
+    </div>
+  </section>
+
+  <footer class="border-t py-16" style="background:#0a0a0a;border-color:#1a1a1a">
+    <div class="max-w-6xl mx-auto px-6">
+      <div class="flex flex-col md:flex-row justify-between gap-14 mb-12">
+        <div>
+          <p class="playfair text-3xl tracking-[0.3em] mb-3" style="color:var(--gold)">AURUM</p>
+          <p class="text-xs leading-loose" style="color:#555">〒000-0000 ○○県○○市○○町10-11-12<br>TEL: 000-000-0003<br>11:00〜20:00（火曜定休）</p>
+        </div>
+        <div class="text-xs tracking-[0.1em] uppercase">
+          <p class="mb-4" style="color:var(--gold)">Menu</p>
+          <ul class="space-y-3" style="color:#555">
+            <li><a href="index.html" class="hover:text-white transition">Home</a></li>
+            <li><a href="about.html" class="hover:text-white transition">About</a></li>
+            <li><a href="products.html" class="hover:text-white transition">Collection</a></li>
+            <li><a href="news.html" class="hover:text-white transition">News</a></li>
+            <li><a href="contact.html" class="hover:text-white transition">Contact</a></li>
+          </ul>
+        </div>
+      </div>
+      <div class="border-t pt-6 flex justify-between" style="border-color:#1a1a1a">
+        <p class="text-xs" style="color:#333">© 2025 AURUM Fine Jewelry</p>
+        <a href="../../index.html" class="text-xs hover:text-gray-400 transition" style="color:#333">【サンプルサイト】</a>
+      </div>
+    </div>
+  </footer>
+
+</body>
+</html>

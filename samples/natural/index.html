@@ -1,0 +1,194 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Fleur — 花と緑のある暮らし</title>
+  <script src="https://cdn.tailwindcss.com"></script>
+  <link href="https://fonts.googleapis.com/css2?family=Noto+Serif+JP:wght@300;400;600&family=Noto+Sans+JP:wght@300;400;500&display=swap" rel="stylesheet">
+  <style>
+    body { font-family: 'Noto Sans JP', sans-serif; background: #faf7f2; color: #2d2926; }
+    .serif { font-family: 'Noto Serif JP', serif; }
+    .btn-primary { background: #4a7c59; color: #fff; }
+    .btn-primary:hover { background: #3a6347; }
+    .nav-link { color: #5a5046; transition: color 0.2s; }
+    .nav-link:hover, .nav-link.active { color: #4a7c59; }
+  </style>
+</head>
+<body>
+
+  <!-- Back link -->
+  <div class="bg-stone-100 border-b border-stone-200 text-xs text-stone-500 py-2">
+    <div class="max-w-5xl mx-auto px-6">
+      <a href="../../index.html" class="hover:text-stone-800 transition">← デザイン一覧に戻る</a>
+      <span class="mx-2">|</span>
+      <span class="text-stone-400">サンプル: Natural — 花屋「Fleur」</span>
+    </div>
+  </div>
+
+  <!-- Nav -->
+  <nav class="bg-white/95 backdrop-blur-sm sticky top-0 z-50 border-b border-stone-200 shadow-sm">
+    <div class="max-w-5xl mx-auto px-6 py-4 flex items-center justify-between">
+      <a href="index.html" class="serif text-2xl tracking-[0.15em] text-stone-800">Fleur</a>
+      <div class="hidden md:flex items-center gap-8 text-sm">
+        <a href="index.html" class="nav-link active font-medium">トップ</a>
+        <a href="about.html" class="nav-link">お店について</a>
+        <a href="products.html" class="nav-link">商品一覧</a>
+        <a href="news.html" class="nav-link">お知らせ</a>
+        <a href="contact.html" class="nav-link btn-primary px-5 py-2 rounded-full text-white text-xs font-medium" style="color:#fff">お問い合わせ</a>
+      </div>
+    </div>
+  </nav>
+
+  <!-- Hero -->
+  <section class="relative overflow-hidden" style="min-height:85vh; background:linear-gradient(160deg,#e8f0e4 0%,#f5ede0 60%,#e8ddd0 100%)">
+    <div class="max-w-5xl mx-auto px-6 py-28 flex flex-col md:flex-row items-center gap-16">
+      <div class="flex-1 z-10">
+        <p class="text-xs tracking-widest text-green-700 uppercase font-medium mb-4">Fleur — 花と緑のある暮らし</p>
+        <h1 class="serif text-5xl md:text-6xl leading-tight text-stone-800 mb-6">
+          日常に、<br>花の彩りを。
+        </h1>
+        <p class="text-stone-600 leading-loose mb-10 text-base max-w-sm">
+          季節の花々や観葉植物を通じて、<br>
+          あなたの暮らしに自然の豊かさをお届けします。
+        </p>
+        <div class="flex gap-4 flex-wrap">
+          <a href="products.html" class="btn-primary px-8 py-3.5 rounded-full font-medium text-sm transition inline-block">商品を見る</a>
+          <a href="contact.html" class="border border-stone-400 text-stone-700 px-8 py-3.5 rounded-full font-medium text-sm hover:bg-stone-100 transition inline-block">お問い合わせ</a>
+        </div>
+      </div>
+      <div class="flex-1 flex justify-center">
+        <div class="relative w-80 h-80 md:w-96 md:h-96">
+          <div class="absolute inset-0 rounded-full" style="background:radial-gradient(circle,#c8dcc2 0%,#a8c4a0 50%,#8aaa82 100%);opacity:0.4"></div>
+          <img src="https://picsum.photos/seed/botanical1/500/500" alt="季節の花" class="w-full h-full object-cover rounded-full shadow-2xl relative z-10">
+        </div>
+      </div>
+    </div>
+    <!-- Decorative circles -->
+    <div class="absolute top-10 right-10 w-40 h-40 rounded-full opacity-20" style="background:#8aaa82"></div>
+    <div class="absolute bottom-20 left-5 w-24 h-24 rounded-full opacity-15" style="background:#c4956a"></div>
+  </section>
+
+  <!-- Featured Products -->
+  <section class="py-20">
+    <div class="max-w-5xl mx-auto px-6">
+      <div class="text-center mb-12">
+        <p class="text-xs tracking-widest text-green-700 uppercase font-medium mb-2">Products</p>
+        <h2 class="serif text-3xl text-stone-800">人気の商品</h2>
+      </div>
+      <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
+        <a href="products.html" class="group bg-white rounded-2xl overflow-hidden shadow-sm hover:shadow-lg transition">
+          <div class="overflow-hidden h-52">
+            <img src="https://picsum.photos/seed/flower10/600/400" alt="季節の花束" class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500">
+          </div>
+          <div class="p-5">
+            <p class="text-xs text-green-600 font-medium mb-1">花束</p>
+            <h3 class="serif text-lg text-stone-800 mb-1">季節の花束</h3>
+            <p class="text-stone-500 text-sm">¥2,500〜</p>
+          </div>
+        </a>
+        <a href="products.html" class="group bg-white rounded-2xl overflow-hidden shadow-sm hover:shadow-lg transition">
+          <div class="overflow-hidden h-52">
+            <img src="https://picsum.photos/seed/plant20/600/400" alt="観葉植物" class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500">
+          </div>
+          <div class="p-5">
+            <p class="text-xs text-green-600 font-medium mb-1">観葉植物</p>
+            <h3 class="serif text-lg text-stone-800 mb-1">インドアグリーン</h3>
+            <p class="text-stone-500 text-sm">¥1,800〜</p>
+          </div>
+        </a>
+        <a href="products.html" class="group bg-white rounded-2xl overflow-hidden shadow-sm hover:shadow-lg transition">
+          <div class="overflow-hidden h-52">
+            <img src="https://picsum.photos/seed/arrange30/600/400" alt="アレンジメント" class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500">
+          </div>
+          <div class="p-5">
+            <p class="text-xs text-green-600 font-medium mb-1">アレンジメント</p>
+            <h3 class="serif text-lg text-stone-800 mb-1">テーブルアレンジ</h3>
+            <p class="text-stone-500 text-sm">¥3,500〜</p>
+          </div>
+        </a>
+      </div>
+      <div class="text-center mt-10">
+        <a href="products.html" class="inline-block border border-green-600 text-green-700 px-8 py-3 rounded-full text-sm font-medium hover:bg-green-50 transition">すべての商品を見る</a>
+      </div>
+    </div>
+  </section>
+
+  <!-- About Teaser -->
+  <section class="py-20" style="background:#f0ebe2">
+    <div class="max-w-5xl mx-auto px-6 flex flex-col md:flex-row items-center gap-14">
+      <div class="flex-1">
+        <img src="https://picsum.photos/seed/shopint1/700/500" alt="お店の様子" class="w-full rounded-2xl shadow-md object-cover h-72">
+      </div>
+      <div class="flex-1">
+        <p class="text-xs tracking-widest text-green-700 uppercase font-medium mb-3">About</p>
+        <h2 class="serif text-3xl text-stone-800 mb-5 leading-snug">地域と共に歩む、<br>小さな花屋</h2>
+        <p class="text-stone-600 leading-loose text-sm mb-8">
+          2012年の開業以来、地元の皆さまに愛され続けてきた花屋「Fleur」。
+          国内外から厳選した花材を毎朝仕入れ、一つひとつ丁寧に手作りしています。
+          贈り物から日常使いまで、あなたのシーンに合わせてご提案します。
+        </p>
+        <a href="about.html" class="inline-block border border-stone-400 text-stone-700 px-7 py-3 rounded-full text-sm font-medium hover:bg-stone-200 transition">お店について詳しく</a>
+      </div>
+    </div>
+  </section>
+
+  <!-- News -->
+  <section class="py-20">
+    <div class="max-w-5xl mx-auto px-6">
+      <div class="flex items-center justify-between mb-10">
+        <div>
+          <p class="text-xs tracking-widest text-green-700 uppercase font-medium mb-1">News</p>
+          <h2 class="serif text-3xl text-stone-800">お知らせ</h2>
+        </div>
+        <a href="news.html" class="text-sm text-green-700 hover:underline">すべて見る →</a>
+      </div>
+      <div class="space-y-4">
+        <a href="news.html" class="flex items-start gap-5 bg-white p-5 rounded-xl hover:shadow-md transition group">
+          <time class="text-xs text-stone-400 shrink-0 pt-0.5">2025.04.20</time>
+          <span class="text-xs bg-green-100 text-green-700 px-2 py-0.5 rounded shrink-0">イベント</span>
+          <p class="text-sm text-stone-700 group-hover:text-green-700 transition">母の日ギフトフェア開催のお知らせ</p>
+        </a>
+        <a href="news.html" class="flex items-start gap-5 bg-white p-5 rounded-xl hover:shadow-md transition group">
+          <time class="text-xs text-stone-400 shrink-0 pt-0.5">2025.04.05</time>
+          <span class="text-xs bg-amber-100 text-amber-700 px-2 py-0.5 rounded shrink-0">新商品</span>
+          <p class="text-sm text-stone-700 group-hover:text-green-700 transition">春の新作アレンジメントが入荷しました</p>
+        </a>
+        <a href="news.html" class="flex items-start gap-5 bg-white p-5 rounded-xl hover:shadow-md transition group">
+          <time class="text-xs text-stone-400 shrink-0 pt-0.5">2025.03.18</time>
+          <span class="text-xs bg-stone-100 text-stone-600 px-2 py-0.5 rounded shrink-0">お知らせ</span>
+          <p class="text-sm text-stone-700 group-hover:text-green-700 transition">春季の営業時間変更について</p>
+        </a>
+      </div>
+    </div>
+  </section>
+
+  <!-- Footer -->
+  <footer style="background:#2d2926" class="text-stone-400 py-14">
+    <div class="max-w-5xl mx-auto px-6">
+      <div class="flex flex-col md:flex-row justify-between gap-10 mb-10">
+        <div>
+          <p class="serif text-2xl text-white tracking-widest mb-2">Fleur</p>
+          <p class="text-sm leading-relaxed">〒000-0000 ○○県○○市○○町1-2-3<br>TEL: 000-000-0000<br>営業時間: 10:00〜19:00（火曜定休）</p>
+        </div>
+        <div class="flex gap-12 text-sm">
+          <div>
+            <p class="text-white font-medium mb-3">メニュー</p>
+            <ul class="space-y-2">
+              <li><a href="index.html" class="hover:text-white transition">トップ</a></li>
+              <li><a href="about.html" class="hover:text-white transition">お店について</a></li>
+              <li><a href="products.html" class="hover:text-white transition">商品一覧</a></li>
+              <li><a href="news.html" class="hover:text-white transition">お知らせ</a></li>
+              <li><a href="contact.html" class="hover:text-white transition">お問い合わせ</a></li>
+            </ul>
+          </div>
+        </div>
+      </div>
+      <div class="border-t border-stone-700 pt-6 text-xs text-center text-stone-600">
+        © 2025 Fleur. All rights reserved. — <a href="../../index.html" class="hover:text-stone-400">【サンプルサイト】</a>
+      </div>
+    </div>
+  </footer>
+
+</body>
+</html>

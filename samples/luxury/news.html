@@ -1,0 +1,150 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>News | AURUM</title>
+  <script src="https://cdn.tailwindcss.com"></script>
+  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400;0,500;1,400;1,500&family=Noto+Sans+JP:wght@300;400&display=swap" rel="stylesheet">
+  <style>
+    :root { --gold: #c4a35a; --dark: #0d0d0d; --mid: #1a1a1a; --warm-white: #f5f0e8; }
+    body { font-family: 'Noto Sans JP', sans-serif; background: var(--dark); color: var(--warm-white); }
+    .playfair { font-family: 'Playfair Display', serif; }
+    .nav-link { color: #888; transition: color 0.3s; }
+    .nav-link:hover, .nav-link.active { color: var(--gold); }
+  </style>
+</head>
+<body>
+
+  <div class="border-b text-xs py-2" style="background:#111;border-color:#222;color:#555">
+    <div class="max-w-6xl mx-auto px-6">
+      <a href="../../index.html" class="hover:text-gray-300 transition">← デザイン一覧に戻る</a>
+      <span class="mx-2" style="color:#333">|</span>
+      <span style="color:#444">サンプル: Luxury — ジュエリー「AURUM」</span>
+    </div>
+  </div>
+
+  <nav class="sticky top-0 z-50 border-b" style="background:rgba(13,13,13,0.97);border-color:#222">
+    <div class="max-w-6xl mx-auto px-6 py-5 flex items-center justify-between">
+      <a href="index.html" class="playfair text-2xl tracking-[0.3em]" style="color:var(--gold)">AURUM</a>
+      <div class="hidden md:flex items-center gap-10 text-xs tracking-[0.15em] uppercase">
+        <a href="index.html" class="nav-link">Home</a>
+        <a href="about.html" class="nav-link">About</a>
+        <a href="products.html" class="nav-link">Collection</a>
+        <a href="news.html" class="nav-link active" style="color:var(--gold)">News</a>
+        <a href="contact.html" class="nav-link border px-5 py-2.5 transition hover:bg-yellow-600/10" style="border-color:var(--gold);color:var(--gold)">Contact</a>
+      </div>
+    </div>
+  </nav>
+
+  <section class="py-16 text-center border-b" style="border-color:#222">
+    <p class="text-xs tracking-[0.4em] uppercase mb-3" style="color:var(--gold)">Information</p>
+    <h1 class="playfair text-5xl font-normal" style="color:var(--warm-white)">News</h1>
+  </section>
+
+  <!-- Featured -->
+  <section class="py-16 border-b" style="background:var(--mid);border-color:#222">
+    <div class="max-w-6xl mx-auto px-6 flex flex-col md:flex-row gap-12 items-center">
+      <div class="md:w-2/5">
+        <div class="relative">
+          <img src="https://picsum.photos/seed/bridal1/700/500" alt="ブライダルフェア" class="w-full h-64 object-cover opacity-70">
+          <div class="absolute inset-0 border" style="border-color:rgba(196,163,90,0.3);margin:10px"></div>
+        </div>
+      </div>
+      <div class="md:w-3/5">
+        <time class="text-xs tracking-widest uppercase" style="color:#555">Apr 10, 2025</time>
+        <p class="text-xs tracking-widest uppercase mt-1 mb-4" style="color:var(--gold)">Collection</p>
+        <h2 class="playfair text-3xl font-normal mb-5 leading-snug" style="color:var(--warm-white)">
+          2025 Summer Collection<br>発売のご案内
+        </h2>
+        <p class="text-sm leading-loose mb-6" style="color:#888">
+          テーマ「Lumière（光）」に基づいた夏の新コレクションが発売となりました。
+          自然光の揺らぎをダイヤモンドで表現した全8アイテムを、ぜひ店頭でご覧ください。
+          期間限定の試着予約も受け付けております。
+        </p>
+        <a href="#" class="text-xs tracking-widest uppercase border-b pb-0.5 hover:opacity-70 transition" style="color:var(--gold);border-color:var(--gold)">Read More →</a>
+      </div>
+    </div>
+  </section>
+
+  <!-- List -->
+  <section class="py-16" style="background:var(--dark)">
+    <div class="max-w-4xl mx-auto px-6">
+      <div class="border-t" style="border-color:#222">
+
+        <a href="#" class="flex items-start gap-6 py-6 border-b hover:bg-white/2 -mx-2 px-2 transition group" style="border-color:#222">
+          <time class="text-xs tracking-widest uppercase shrink-0 w-28" style="color:#555">Mar 20, 2025</time>
+          <span class="text-xs tracking-widest uppercase shrink-0" style="color:var(--gold)">Event</span>
+          <div>
+            <p class="text-sm mb-1 group-hover:opacity-100 transition" style="color:#bbb">春のブライダルフェア開催のお知らせ</p>
+            <p class="text-xs leading-relaxed" style="color:#555">4月5日（土）・6日（日）、ブライダルジュエリーの特別フェアを開催。専任スタッフがご相談を承ります。</p>
+          </div>
+        </a>
+
+        <a href="#" class="flex items-start gap-6 py-6 border-b hover:bg-white/2 -mx-2 px-2 transition group" style="border-color:#222">
+          <time class="text-xs tracking-widest uppercase shrink-0 w-28" style="color:#555">Mar 01, 2025</time>
+          <span class="text-xs tracking-widest uppercase shrink-0" style="color:var(--gold)">Info</span>
+          <div>
+            <p class="text-sm mb-1 group-hover:opacity-100 transition" style="color:#bbb">銀座本店 リニューアルオープンのご案内</p>
+            <p class="text-xs leading-relaxed" style="color:#555">店内を全面リニューアルし、より落ち着いた空間でお買い物をお楽しみいただけるようになりました。</p>
+          </div>
+        </a>
+
+        <a href="#" class="flex items-start gap-6 py-6 border-b hover:bg-white/2 -mx-2 px-2 transition group" style="border-color:#222">
+          <time class="text-xs tracking-widest uppercase shrink-0 w-28" style="color:#555">Feb 14, 2025</time>
+          <span class="text-xs tracking-widest uppercase shrink-0" style="color:var(--gold)">Event</span>
+          <div>
+            <p class="text-sm mb-1 group-hover:opacity-100 transition" style="color:#bbb">Valentine Limited — 限定エングレービングサービス</p>
+            <p class="text-xs leading-relaxed" style="color:#555">2月14日まで、リングへのメッセージ彫刻を特別価格でご提供いたしました。</p>
+          </div>
+        </a>
+
+        <a href="#" class="flex items-start gap-6 py-6 border-b hover:bg-white/2 -mx-2 px-2 transition group" style="border-color:#222">
+          <time class="text-xs tracking-widest uppercase shrink-0 w-28" style="color:#555">Jan 15, 2025</time>
+          <span class="text-xs tracking-widest uppercase shrink-0" style="color:var(--gold)">Collection</span>
+          <div>
+            <p class="text-sm mb-1 group-hover:opacity-100 transition" style="color:#bbb">2025 Winter Collection アーカイブ公開</p>
+            <p class="text-xs leading-relaxed" style="color:#555">昨シーズンのコレクション「Silence」の全アーカイブをオンラインで公開しました。</p>
+          </div>
+        </a>
+
+        <a href="#" class="flex items-start gap-6 py-6 hover:bg-white/2 -mx-2 px-2 transition group">
+          <time class="text-xs tracking-widest uppercase shrink-0 w-28" style="color:#555">Jan 06, 2025</time>
+          <span class="text-xs tracking-widest uppercase shrink-0" style="color:var(--gold)">Info</span>
+          <div>
+            <p class="text-sm mb-1 group-hover:opacity-100 transition" style="color:#bbb">2025年 新年のご挨拶</p>
+            <p class="text-xs leading-relaxed" style="color:#555">本年もAURUMをどうぞよろしくお願い申し上げます。</p>
+          </div>
+        </a>
+
+      </div>
+    </div>
+  </section>
+
+  <footer class="border-t py-16" style="background:#0a0a0a;border-color:#1a1a1a">
+    <div class="max-w-6xl mx-auto px-6">
+      <div class="flex flex-col md:flex-row justify-between gap-14 mb-12">
+        <div>
+          <p class="playfair text-3xl tracking-[0.3em] mb-3" style="color:var(--gold)">AURUM</p>
+          <p class="text-xs leading-loose" style="color:#555">〒000-0000 ○○県○○市○○町10-11-12<br>TEL: 000-000-0003<br>11:00〜20:00（火曜定休）</p>
+        </div>
+        <div class="text-xs tracking-[0.1em] uppercase">
+          <p class="mb-4" style="color:var(--gold)">Menu</p>
+          <ul class="space-y-3" style="color:#555">
+            <li><a href="index.html" class="hover:text-white transition">Home</a></li>
+            <li><a href="about.html" class="hover:text-white transition">About</a></li>
+            <li><a href="products.html" class="hover:text-white transition">Collection</a></li>
+            <li><a href="news.html" class="hover:text-white transition">News</a></li>
+            <li><a href="contact.html" class="hover:text-white transition">Contact</a></li>
+          </ul>
+        </div>
+      </div>
+      <div class="border-t pt-6 flex justify-between" style="border-color:#1a1a1a">
+        <p class="text-xs" style="color:#333">© 2025 AURUM Fine Jewelry</p>
+        <a href="../../index.html" class="text-xs hover:text-gray-400 transition" style="color:#333">【サンプルサイト】</a>
+      </div>
+    </div>
+  </footer>
+
+</body>
+</html>

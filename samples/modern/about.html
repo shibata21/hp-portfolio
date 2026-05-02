@@ -1,0 +1,161 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>About | BLANC</title>
+  <script src="https://cdn.tailwindcss.com"></script>
+  <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,300;0,400;0,600;1,300;1,400&family=Noto+Sans+JP:wght@300;400;500&display=swap" rel="stylesheet">
+  <style>
+    :root { --gold: #b8963e; --dark: #0f0f14; }
+    body { font-family: 'Noto Sans JP', sans-serif; background: #fff; color: #1a1a1a; }
+    .garamond { font-family: 'Cormorant Garamond', serif; }
+    .nav-link { color: #555; transition: color 0.2s; letter-spacing: 0.05em; }
+    .nav-link:hover, .nav-link.active { color: var(--gold); }
+  </style>
+</head>
+<body>
+
+  <div style="background:#f5f5f5" class="border-b border-gray-200 text-xs text-gray-400 py-2">
+    <div class="max-w-6xl mx-auto px-6">
+      <a href="../../index.html" class="hover:text-gray-700 transition">← デザイン一覧に戻る</a>
+      <span class="mx-2">|</span>
+      <span class="text-gray-300">サンプル: Modern — セレクトショップ「BLANC」</span>
+    </div>
+  </div>
+
+  <nav class="bg-white sticky top-0 z-50 border-b border-gray-100">
+    <div class="max-w-6xl mx-auto px-6 py-5 flex items-center justify-between">
+      <a href="index.html" class="garamond text-3xl tracking-[0.2em] font-light" style="color:#0f0f14">BLANC</a>
+      <div class="hidden md:flex items-center gap-10 text-xs tracking-widest uppercase">
+        <a href="index.html" class="nav-link">Top</a>
+        <a href="about.html" class="nav-link active" style="color:var(--gold)">About</a>
+        <a href="products.html" class="nav-link">Collection</a>
+        <a href="news.html" class="nav-link">News</a>
+        <a href="contact.html" class="nav-link">Contact</a>
+      </div>
+    </div>
+  </nav>
+
+  <!-- Page Hero -->
+  <section class="relative overflow-hidden" style="height:50vh;background:var(--dark)">
+    <img src="https://picsum.photos/seed/interior1/1400/600" alt="店内" class="absolute inset-0 w-full h-full object-cover opacity-40">
+    <div class="absolute inset-0 flex flex-col justify-center items-center text-white text-center">
+      <p class="garamond text-xs tracking-[0.3em] uppercase mb-3" style="color:var(--gold)">Our Story</p>
+      <h1 class="garamond text-5xl md:text-6xl font-light">About BLANC</h1>
+    </div>
+  </section>
+
+  <!-- Philosophy -->
+  <section class="py-24">
+    <div class="max-w-4xl mx-auto px-6 text-center">
+      <p class="garamond text-xs tracking-[0.3em] uppercase mb-4" style="color:var(--gold)">Philosophy</p>
+      <h2 class="garamond text-4xl font-light mb-8 leading-snug">「白紙」から始まる、<br><em>あなただけのスタイル。</em></h2>
+      <p class="text-gray-500 leading-loose max-w-2xl mx-auto">
+        BLANCはフランス語で「白」を意味します。白いキャンバスのように、
+        着る人の個性を映し出すアイテムを提案したいという思いからこの名前を選びました。
+        流行に左右されない本質的な美しさと、上質な素材へのこだわり。
+        それがBLANCのすべてです。
+      </p>
+    </div>
+  </section>
+
+  <!-- Timeline -->
+  <section style="background:#f9f9f9" class="py-20">
+    <div class="max-w-3xl mx-auto px-6">
+      <h2 class="garamond text-3xl font-light text-center mb-14">History</h2>
+      <div class="space-y-10">
+        <div class="flex gap-8">
+          <div class="shrink-0 text-right w-20">
+            <span class="garamond text-2xl font-light" style="color:var(--gold)">2010</span>
+          </div>
+          <div class="flex-1 border-l border-gray-200 pl-8 pb-8">
+            <h3 class="font-medium text-sm mb-1">創業</h3>
+            <p class="text-gray-400 text-sm leading-relaxed">東京・代官山に1号店をオープン。オーナーがパリで学んだセンスと、日本の美意識を融合させたコンセプトショップとしてスタート。</p>
+          </div>
+        </div>
+        <div class="flex gap-8">
+          <div class="shrink-0 text-right w-20">
+            <span class="garamond text-2xl font-light" style="color:var(--gold)">2015</span>
+          </div>
+          <div class="flex-1 border-l border-gray-200 pl-8 pb-8">
+            <h3 class="font-medium text-sm mb-1">オリジナルライン開始</h3>
+            <p class="text-gray-400 text-sm leading-relaxed">セレクトに加え、BLANCオリジナルのアパレルラインを立ち上げ。国内外のファクトリーと連携し、品質にこだわったものづくりを追求。</p>
+          </div>
+        </div>
+        <div class="flex gap-8">
+          <div class="shrink-0 text-right w-20">
+            <span class="garamond text-2xl font-light" style="color:var(--gold)">2020</span>
+          </div>
+          <div class="flex-1 border-l border-gray-200 pl-8 pb-8">
+            <h3 class="font-medium text-sm mb-1">オンラインストア開設</h3>
+            <p class="text-gray-400 text-sm leading-relaxed">全国のお客様に届けるためオンラインストアを開設。丁寧なスタイリングコンテンツが反響を呼ぶ。</p>
+          </div>
+        </div>
+        <div class="flex gap-8">
+          <div class="shrink-0 text-right w-20">
+            <span class="garamond text-2xl font-light" style="color:var(--gold)">2024</span>
+          </div>
+          <div class="flex-1 border-l border-gray-200 pl-8">
+            <h3 class="font-medium text-sm mb-1">リニューアルオープン</h3>
+            <p class="text-gray-400 text-sm leading-relaxed">店舗を全面リニューアル。より快適なショッピング体験をご提供できるようになりました。</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Team -->
+  <section class="py-24">
+    <div class="max-w-6xl mx-auto px-6">
+      <h2 class="garamond text-3xl font-light text-center mb-14">Team</h2>
+      <div class="grid grid-cols-1 md:grid-cols-3 gap-10">
+        <div class="text-center">
+          <img src="https://picsum.photos/seed/staff1/300/300" alt="Yuki Nakamura" class="w-40 h-40 rounded-full object-cover mx-auto mb-5 grayscale hover:grayscale-0 transition duration-500">
+          <p class="garamond text-xl font-light">中村 悠希</p>
+          <p class="text-xs tracking-widest uppercase mt-1 mb-3" style="color:var(--gold)">Founder & Director</p>
+          <p class="text-gray-400 text-xs leading-relaxed">パリのIFMで学んだ後、帰国してBLANCを創業。ファッションの力で人の魅力を引き出すことを信念としている。</p>
+        </div>
+        <div class="text-center">
+          <img src="https://picsum.photos/seed/staff2/300/300" alt="Rin Hayashi" class="w-40 h-40 rounded-full object-cover mx-auto mb-5 grayscale hover:grayscale-0 transition duration-500">
+          <p class="garamond text-xl font-light">林 凛</p>
+          <p class="text-xs tracking-widest uppercase mt-1 mb-3" style="color:var(--gold)">Head Stylist</p>
+          <p class="text-gray-400 text-xs leading-relaxed">雑誌スタイリストを経てBLANCに参加。お客様一人ひとりのライフスタイルに合ったスタイリングを提案する。</p>
+        </div>
+        <div class="text-center">
+          <img src="https://picsum.photos/seed/staff3/300/300" alt="Kenji Ota" class="w-40 h-40 rounded-full object-cover mx-auto mb-5 grayscale hover:grayscale-0 transition duration-500">
+          <p class="garamond text-xl font-light">太田 健二</p>
+          <p class="text-xs tracking-widest uppercase mt-1 mb-3" style="color:var(--gold)">Store Manager</p>
+          <p class="text-gray-400 text-xs leading-relaxed">ラグジュアリーブランドでの経験を活かし、上質なお買い物体験の提供に尽力する。</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <footer style="background:var(--dark)" class="text-gray-500 py-16">
+    <div class="max-w-6xl mx-auto px-6">
+      <div class="flex flex-col md:flex-row justify-between gap-12 mb-12">
+        <div>
+          <p class="garamond text-3xl text-white tracking-[0.2em] font-light mb-3">BLANC</p>
+          <p class="text-sm leading-relaxed">〒000-0000 ○○県○○市○○町4-5-6<br>TEL: 000-000-0001<br>11:00〜20:00（水曜定休）</p>
+        </div>
+        <div class="text-xs tracking-widest uppercase">
+          <p class="text-white mb-4">Menu</p>
+          <ul class="space-y-2.5">
+            <li><a href="index.html" class="hover:text-white transition">Top</a></li>
+            <li><a href="about.html" class="hover:text-white transition">About</a></li>
+            <li><a href="products.html" class="hover:text-white transition">Collection</a></li>
+            <li><a href="news.html" class="hover:text-white transition">News</a></li>
+            <li><a href="contact.html" class="hover:text-white transition">Contact</a></li>
+          </ul>
+        </div>
+      </div>
+      <div class="border-t border-gray-800 pt-6 flex justify-between">
+        <p class="text-xs text-gray-700">© 2025 BLANC Select Shop</p>
+        <a href="../../index.html" class="text-xs text-gray-700 hover:text-gray-400">【サンプルサイト】</a>
+      </div>
+    </div>
+  </footer>
+
+</body>
+</html>

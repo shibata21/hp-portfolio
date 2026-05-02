@@ -1,0 +1,153 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>お問い合わせ | Fleur</title>
+  <script src="https://cdn.tailwindcss.com"></script>
+  <link href="https://fonts.googleapis.com/css2?family=Noto+Serif+JP:wght@300;400;600&family=Noto+Sans+JP:wght@300;400;500&display=swap" rel="stylesheet">
+  <style>
+    body { font-family: 'Noto Sans JP', sans-serif; background: #faf7f2; color: #2d2926; }
+    .serif { font-family: 'Noto Serif JP', serif; }
+    .nav-link { color: #5a5046; transition: color 0.2s; }
+    .nav-link:hover, .nav-link.active { color: #4a7c59; }
+    input, textarea, select { outline: none; transition: border-color 0.2s, box-shadow 0.2s; }
+    input:focus, textarea:focus, select:focus { border-color: #4a7c59; box-shadow: 0 0 0 3px rgba(74,124,89,0.1); }
+  </style>
+</head>
+<body>
+
+  <div class="bg-stone-100 border-b border-stone-200 text-xs text-stone-500 py-2">
+    <div class="max-w-5xl mx-auto px-6">
+      <a href="../../index.html" class="hover:text-stone-800 transition">← デザイン一覧に戻る</a>
+      <span class="mx-2">|</span>
+      <span class="text-stone-400">サンプル: Natural — 花屋「Fleur」</span>
+    </div>
+  </div>
+
+  <nav class="bg-white/95 backdrop-blur-sm sticky top-0 z-50 border-b border-stone-200 shadow-sm">
+    <div class="max-w-5xl mx-auto px-6 py-4 flex items-center justify-between">
+      <a href="index.html" class="serif text-2xl tracking-[0.15em] text-stone-800">Fleur</a>
+      <div class="hidden md:flex items-center gap-8 text-sm">
+        <a href="index.html" class="nav-link">トップ</a>
+        <a href="about.html" class="nav-link">お店について</a>
+        <a href="products.html" class="nav-link">商品一覧</a>
+        <a href="news.html" class="nav-link">お知らせ</a>
+        <a href="contact.html" class="nav-link active px-5 py-2 rounded-full text-white text-xs font-medium" style="background:#4a7c59">お問い合わせ</a>
+      </div>
+    </div>
+  </nav>
+
+  <section class="py-16 text-center" style="background:linear-gradient(160deg,#e8f0e4,#f5ede0)">
+    <p class="text-xs tracking-widest text-green-700 uppercase font-medium mb-2">Contact</p>
+    <h1 class="serif text-4xl text-stone-800">お問い合わせ</h1>
+  </section>
+
+  <section class="py-16">
+    <div class="max-w-5xl mx-auto px-6 flex flex-col md:flex-row gap-14">
+
+      <!-- Shop Info -->
+      <div class="md:w-72 shrink-0">
+        <h2 class="serif text-xl text-stone-800 mb-6">店舗情報</h2>
+        <div class="space-y-5 text-sm">
+          <div>
+            <p class="text-green-700 font-medium mb-1">住所</p>
+            <p class="text-stone-600 leading-relaxed">〒000-0000<br>○○県○○市○○町1-2-3</p>
+          </div>
+          <div>
+            <p class="text-green-700 font-medium mb-1">電話</p>
+            <p class="text-stone-600">000-000-0000</p>
+          </div>
+          <div>
+            <p class="text-green-700 font-medium mb-1">営業時間</p>
+            <p class="text-stone-600">平日・土日 10:00〜19:00<br>定休日：火曜日</p>
+          </div>
+          <div>
+            <p class="text-green-700 font-medium mb-1">アクセス</p>
+            <p class="text-stone-600">○○駅 徒歩5分<br>店舗前に駐車場3台</p>
+          </div>
+        </div>
+        <!-- Map placeholder -->
+        <div class="mt-6 rounded-xl overflow-hidden h-48 bg-stone-200 flex items-center justify-center">
+          <p class="text-stone-400 text-xs">地図がここに入ります</p>
+        </div>
+      </div>
+
+      <!-- Form -->
+      <div class="flex-1">
+        <h2 class="serif text-xl text-stone-800 mb-6">メールでのお問い合わせ</h2>
+        <!-- Formspree: action属性を実際のFormspreeエンドポイントに変更してください -->
+        <form action="https://formspree.io/f/XXXXXXXX" method="POST" class="space-y-5">
+          <div class="grid grid-cols-1 md:grid-cols-2 gap-5">
+            <div>
+              <label class="block text-xs font-medium text-stone-700 mb-1.5">お名前 <span class="text-red-400">*</span></label>
+              <input type="text" name="name" required placeholder="山田 花子"
+                class="w-full border border-stone-300 rounded-xl px-4 py-3 text-sm bg-white">
+            </div>
+            <div>
+              <label class="block text-xs font-medium text-stone-700 mb-1.5">メールアドレス <span class="text-red-400">*</span></label>
+              <input type="email" name="email" required placeholder="example@email.com"
+                class="w-full border border-stone-300 rounded-xl px-4 py-3 text-sm bg-white">
+            </div>
+          </div>
+          <div>
+            <label class="block text-xs font-medium text-stone-700 mb-1.5">電話番号</label>
+            <input type="tel" name="tel" placeholder="000-000-0000"
+              class="w-full border border-stone-300 rounded-xl px-4 py-3 text-sm bg-white">
+          </div>
+          <div>
+            <label class="block text-xs font-medium text-stone-700 mb-1.5">お問い合わせ種別</label>
+            <select name="category" class="w-full border border-stone-300 rounded-xl px-4 py-3 text-sm bg-white text-stone-600">
+              <option value="">選択してください</option>
+              <option value="order">ご注文・ご予約</option>
+              <option value="custom">カスタムオーダー</option>
+              <option value="event">イベント・ワークショップ</option>
+              <option value="other">その他</option>
+            </select>
+          </div>
+          <div>
+            <label class="block text-xs font-medium text-stone-700 mb-1.5">お問い合わせ内容 <span class="text-red-400">*</span></label>
+            <textarea name="message" required rows="6" placeholder="ご質問やご要望をご記入ください"
+              class="w-full border border-stone-300 rounded-xl px-4 py-3 text-sm bg-white resize-none"></textarea>
+          </div>
+          <button type="submit"
+            class="w-full py-4 rounded-xl text-white font-medium text-sm transition hover:opacity-90"
+            style="background:#4a7c59">
+            送信する
+          </button>
+          <p class="text-xs text-stone-400 text-center">
+            送信後、2営業日以内にご返信いたします。<br>
+            お急ぎの場合はお電話でお問い合わせください。
+          </p>
+        </form>
+      </div>
+
+    </div>
+  </section>
+
+  <footer style="background:#2d2926" class="text-stone-400 py-14">
+    <div class="max-w-5xl mx-auto px-6">
+      <div class="flex flex-col md:flex-row justify-between gap-10 mb-10">
+        <div>
+          <p class="serif text-2xl text-white tracking-widest mb-2">Fleur</p>
+          <p class="text-sm leading-relaxed">〒000-0000 ○○県○○市○○町1-2-3<br>TEL: 000-000-0000<br>営業時間: 10:00〜19:00（火曜定休）</p>
+        </div>
+        <div class="text-sm">
+          <p class="text-white font-medium mb-3">メニュー</p>
+          <ul class="space-y-2">
+            <li><a href="index.html" class="hover:text-white transition">トップ</a></li>
+            <li><a href="about.html" class="hover:text-white transition">お店について</a></li>
+            <li><a href="products.html" class="hover:text-white transition">商品一覧</a></li>
+            <li><a href="news.html" class="hover:text-white transition">お知らせ</a></li>
+            <li><a href="contact.html" class="hover:text-white transition">お問い合わせ</a></li>
+          </ul>
+        </div>
+      </div>
+      <div class="border-t border-stone-700 pt-6 text-xs text-center text-stone-600">
+        © 2025 Fleur. All rights reserved. — <a href="../../index.html" class="hover:text-stone-400">【サンプルサイト】</a>
+      </div>
+    </div>
+  </footer>
+
+</body>
+</html>

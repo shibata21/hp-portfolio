@@ -1,0 +1,182 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Collection | BLANC</title>
+  <script src="https://cdn.tailwindcss.com"></script>
+  <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,300;0,400;0,600;1,300;1,400&family=Noto+Sans+JP:wght@300;400;500&display=swap" rel="stylesheet">
+  <style>
+    :root { --gold: #b8963e; --dark: #0f0f14; }
+    body { font-family: 'Noto Sans JP', sans-serif; background: #fff; color: #1a1a1a; }
+    .garamond { font-family: 'Cormorant Garamond', serif; }
+    .nav-link { color: #555; transition: color 0.2s; }
+    .nav-link:hover, .nav-link.active { color: var(--gold); }
+    .filter-btn.active { background: #1a1a1a; color: #fff; border-color: #1a1a1a; }
+    .product-img { transition: transform 0.7s cubic-bezier(0.25,0.46,0.45,0.94); }
+    .product-card:hover .product-img { transform: scale(1.06); }
+  </style>
+</head>
+<body>
+
+  <div style="background:#f5f5f5" class="border-b border-gray-200 text-xs text-gray-400 py-2">
+    <div class="max-w-6xl mx-auto px-6">
+      <a href="../../index.html" class="hover:text-gray-700 transition">← デザイン一覧に戻る</a>
+      <span class="mx-2">|</span>
+      <span class="text-gray-300">サンプル: Modern — セレクトショップ「BLANC」</span>
+    </div>
+  </div>
+
+  <nav class="bg-white sticky top-0 z-50 border-b border-gray-100">
+    <div class="max-w-6xl mx-auto px-6 py-5 flex items-center justify-between">
+      <a href="index.html" class="garamond text-3xl tracking-[0.2em] font-light" style="color:#0f0f14">BLANC</a>
+      <div class="hidden md:flex items-center gap-10 text-xs tracking-widest uppercase">
+        <a href="index.html" class="nav-link">Top</a>
+        <a href="about.html" class="nav-link">About</a>
+        <a href="products.html" class="nav-link active" style="color:var(--gold)">Collection</a>
+        <a href="news.html" class="nav-link">News</a>
+        <a href="contact.html" class="nav-link">Contact</a>
+      </div>
+    </div>
+  </nav>
+
+  <!-- Page Header -->
+  <section class="py-16 text-center border-b border-gray-100">
+    <p class="garamond text-xs tracking-[0.3em] uppercase mb-2" style="color:var(--gold)">2025 SS</p>
+    <h1 class="garamond text-5xl font-light">Collection</h1>
+  </section>
+
+  <section class="py-16">
+    <div class="max-w-6xl mx-auto px-6">
+
+      <!-- Filters -->
+      <div class="flex gap-3 flex-wrap mb-12">
+        <button onclick="filterItems('all')" data-tab="all" class="filter-btn active px-6 py-2 text-xs tracking-widest uppercase border border-gray-300 transition">All</button>
+        <button onclick="filterItems('women')" data-tab="women" class="filter-btn px-6 py-2 text-xs tracking-widest uppercase bg-white text-gray-500 border border-gray-300 hover:bg-gray-50 transition">Women</button>
+        <button onclick="filterItems('men')" data-tab="men" class="filter-btn px-6 py-2 text-xs tracking-widest uppercase bg-white text-gray-500 border border-gray-300 hover:bg-gray-50 transition">Men</button>
+        <button onclick="filterItems('acc')" data-tab="acc" class="filter-btn px-6 py-2 text-xs tracking-widest uppercase bg-white text-gray-500 border border-gray-300 hover:bg-gray-50 transition">Accessories</button>
+      </div>
+
+      <!-- Grid -->
+      <div id="product-grid" class="grid grid-cols-2 md:grid-cols-4 gap-6">
+
+        <div class="product-card group cursor-pointer" data-cat="women">
+          <div class="overflow-hidden bg-gray-100 mb-3" style="aspect-ratio:3/4">
+            <img src="https://picsum.photos/seed/w1/400/533" alt="" class="product-img w-full h-full object-cover">
+          </div>
+          <p class="text-xs text-gray-300 tracking-widest uppercase mb-0.5">Women / Tops</p>
+          <p class="text-sm">シルクブラウス</p>
+          <p class="text-xs text-gray-400 mt-0.5">¥28,600</p>
+        </div>
+
+        <div class="product-card group cursor-pointer" data-cat="women">
+          <div class="overflow-hidden bg-gray-100 mb-3" style="aspect-ratio:3/4">
+            <img src="https://picsum.photos/seed/w2/400/533" alt="" class="product-img w-full h-full object-cover">
+          </div>
+          <p class="text-xs text-gray-300 tracking-widest uppercase mb-0.5">Women / Dress</p>
+          <p class="text-sm">リネンワンピース</p>
+          <p class="text-xs text-gray-400 mt-0.5">¥42,000</p>
+        </div>
+
+        <div class="product-card group cursor-pointer" data-cat="women">
+          <div class="overflow-hidden bg-gray-100 mb-3" style="aspect-ratio:3/4">
+            <img src="https://picsum.photos/seed/w3/400/533" alt="" class="product-img w-full h-full object-cover">
+          </div>
+          <p class="text-xs text-gray-300 tracking-widest uppercase mb-0.5">Women / Bottoms</p>
+          <p class="text-sm">テーパードパンツ</p>
+          <p class="text-xs text-gray-400 mt-0.5">¥24,200</p>
+        </div>
+
+        <div class="product-card group cursor-pointer" data-cat="men">
+          <div class="overflow-hidden bg-gray-100 mb-3" style="aspect-ratio:3/4">
+            <img src="https://picsum.photos/seed/m1/400/533" alt="" class="product-img w-full h-full object-cover">
+          </div>
+          <p class="text-xs text-gray-300 tracking-widest uppercase mb-0.5">Men / Tops</p>
+          <p class="text-sm">コットンシャツ</p>
+          <p class="text-xs text-gray-400 mt-0.5">¥18,700</p>
+        </div>
+
+        <div class="product-card group cursor-pointer" data-cat="men">
+          <div class="overflow-hidden bg-gray-100 mb-3" style="aspect-ratio:3/4">
+            <img src="https://picsum.photos/seed/m2/400/533" alt="" class="product-img w-full h-full object-cover">
+          </div>
+          <p class="text-xs text-gray-300 tracking-widest uppercase mb-0.5">Men / Outerwear</p>
+          <p class="text-sm">トレンチコート</p>
+          <p class="text-xs text-gray-400 mt-0.5">¥56,000</p>
+        </div>
+
+        <div class="product-card group cursor-pointer" data-cat="men">
+          <div class="overflow-hidden bg-gray-100 mb-3" style="aspect-ratio:3/4">
+            <img src="https://picsum.photos/seed/m3/400/533" alt="" class="product-img w-full h-full object-cover">
+          </div>
+          <p class="text-xs text-gray-300 tracking-widest uppercase mb-0.5">Men / Bottoms</p>
+          <p class="text-sm">ウールスラックス</p>
+          <p class="text-xs text-gray-400 mt-0.5">¥31,900</p>
+        </div>
+
+        <div class="product-card group cursor-pointer" data-cat="acc">
+          <div class="overflow-hidden bg-gray-100 mb-3" style="aspect-ratio:3/4">
+            <img src="https://picsum.photos/seed/a1/400/533" alt="" class="product-img w-full h-full object-cover">
+          </div>
+          <p class="text-xs text-gray-300 tracking-widest uppercase mb-0.5">Accessories / Bag</p>
+          <p class="text-sm">レザートートバッグ</p>
+          <p class="text-xs text-gray-400 mt-0.5">¥58,000</p>
+        </div>
+
+        <div class="product-card group cursor-pointer" data-cat="acc">
+          <div class="overflow-hidden bg-gray-100 mb-3" style="aspect-ratio:3/4">
+            <img src="https://picsum.photos/seed/a2/400/533" alt="" class="product-img w-full h-full object-cover">
+          </div>
+          <p class="text-xs text-gray-300 tracking-widest uppercase mb-0.5">Accessories / Shoes</p>
+          <p class="text-sm">レザーローファー</p>
+          <p class="text-xs text-gray-400 mt-0.5">¥44,000</p>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <section class="py-14 text-center" style="background:var(--dark)">
+    <p class="text-gray-400 text-sm mb-4">スタイリングのご相談はお気軽に</p>
+    <a href="contact.html" class="inline-block border text-xs tracking-widest uppercase px-10 py-3.5 transition hover:bg-white hover:text-gray-900" style="border-color:var(--gold);color:var(--gold)">Contact Us</a>
+  </section>
+
+  <footer style="background:var(--dark)" class="text-gray-500 py-16">
+    <div class="max-w-6xl mx-auto px-6">
+      <div class="flex flex-col md:flex-row justify-between gap-12 mb-12">
+        <div>
+          <p class="garamond text-3xl text-white tracking-[0.2em] font-light mb-3">BLANC</p>
+          <p class="text-sm leading-relaxed">〒000-0000 ○○県○○市○○町4-5-6<br>TEL: 000-000-0001<br>11:00〜20:00（水曜定休）</p>
+        </div>
+        <div class="text-xs tracking-widest uppercase">
+          <p class="text-white mb-4">Menu</p>
+          <ul class="space-y-2.5">
+            <li><a href="index.html" class="hover:text-white transition">Top</a></li>
+            <li><a href="about.html" class="hover:text-white transition">About</a></li>
+            <li><a href="products.html" class="hover:text-white transition">Collection</a></li>
+            <li><a href="news.html" class="hover:text-white transition">News</a></li>
+            <li><a href="contact.html" class="hover:text-white transition">Contact</a></li>
+          </ul>
+        </div>
+      </div>
+      <div class="border-t border-gray-800 pt-6 flex justify-between">
+        <p class="text-xs text-gray-700">© 2025 BLANC Select Shop</p>
+        <a href="../../index.html" class="text-xs text-gray-700 hover:text-gray-400">【サンプルサイト】</a>
+      </div>
+    </div>
+  </footer>
+
+  <script>
+    function filterItems(cat) {
+      document.querySelectorAll('.filter-btn').forEach(b => {
+        b.classList.remove('active');
+        b.classList.add('bg-white','text-gray-500');
+      });
+      document.querySelector(`[data-tab="${cat}"]`).classList.add('active');
+      document.querySelectorAll('#product-grid [data-cat]').forEach(card => {
+        card.style.display = (cat === 'all' || card.dataset.cat === cat) ? 'block' : 'none';
+      });
+    }
+  </script>
+</body>
+</html>

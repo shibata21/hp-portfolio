@@ -1,0 +1,152 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Contact | BLANC</title>
+  <script src="https://cdn.tailwindcss.com"></script>
+  <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,300;0,400;0,600;1,300;1,400&family=Noto+Sans+JP:wght@300;400;500&display=swap" rel="stylesheet">
+  <style>
+    :root { --gold: #b8963e; --dark: #0f0f14; }
+    body { font-family: 'Noto Sans JP', sans-serif; background: #fff; color: #1a1a1a; }
+    .garamond { font-family: 'Cormorant Garamond', serif; }
+    .nav-link { color: #555; transition: color 0.2s; }
+    .nav-link:hover, .nav-link.active { color: var(--gold); }
+    input, textarea, select { outline: none; transition: border-color 0.2s; }
+    input:focus, textarea:focus, select:focus { border-color: #b8963e; }
+  </style>
+</head>
+<body>
+
+  <div style="background:#f5f5f5" class="border-b border-gray-200 text-xs text-gray-400 py-2">
+    <div class="max-w-6xl mx-auto px-6">
+      <a href="../../index.html" class="hover:text-gray-700 transition">← デザイン一覧に戻る</a>
+      <span class="mx-2">|</span>
+      <span class="text-gray-300">サンプル: Modern — セレクトショップ「BLANC」</span>
+    </div>
+  </div>
+
+  <nav class="bg-white sticky top-0 z-50 border-b border-gray-100">
+    <div class="max-w-6xl mx-auto px-6 py-5 flex items-center justify-between">
+      <a href="index.html" class="garamond text-3xl tracking-[0.2em] font-light" style="color:#0f0f14">BLANC</a>
+      <div class="hidden md:flex items-center gap-10 text-xs tracking-widest uppercase">
+        <a href="index.html" class="nav-link">Top</a>
+        <a href="about.html" class="nav-link">About</a>
+        <a href="products.html" class="nav-link">Collection</a>
+        <a href="news.html" class="nav-link">News</a>
+        <a href="contact.html" class="nav-link active" style="color:var(--gold)">Contact</a>
+      </div>
+    </div>
+  </nav>
+
+  <section class="py-16 text-center border-b border-gray-100">
+    <p class="garamond text-xs tracking-[0.3em] uppercase mb-2" style="color:var(--gold)">Get in Touch</p>
+    <h1 class="garamond text-5xl font-light">Contact</h1>
+  </section>
+
+  <section class="py-20">
+    <div class="max-w-5xl mx-auto px-6 flex flex-col md:flex-row gap-16">
+
+      <!-- Info -->
+      <div class="md:w-64 shrink-0">
+        <div class="space-y-8 text-sm">
+          <div>
+            <p class="text-xs tracking-widest uppercase mb-2" style="color:var(--gold)">Address</p>
+            <p class="text-gray-500 leading-relaxed">〒000-0000<br>○○県○○市○○町4-5-6</p>
+          </div>
+          <div>
+            <p class="text-xs tracking-widest uppercase mb-2" style="color:var(--gold)">Phone</p>
+            <p class="text-gray-500">000-000-0001</p>
+          </div>
+          <div>
+            <p class="text-xs tracking-widest uppercase mb-2" style="color:var(--gold)">Hours</p>
+            <p class="text-gray-500 leading-relaxed">11:00 — 20:00<br>定休日：水曜日</p>
+          </div>
+          <div>
+            <p class="text-xs tracking-widest uppercase mb-2" style="color:var(--gold)">Access</p>
+            <p class="text-gray-500 leading-relaxed">○○駅より徒歩3分<br>提携駐車場あり</p>
+          </div>
+        </div>
+        <div class="mt-8 bg-gray-100 h-48 flex items-center justify-center">
+          <p class="text-gray-300 text-xs">地図がここに入ります</p>
+        </div>
+      </div>
+
+      <!-- Form -->
+      <div class="flex-1">
+        <h2 class="garamond text-2xl font-light mb-8">Send a Message</h2>
+        <!-- Formspree: action属性を実際のFormspreeエンドポイントに変更してください -->
+        <form action="https://formspree.io/f/XXXXXXXX" method="POST" class="space-y-6">
+          <div class="grid grid-cols-1 md:grid-cols-2 gap-6">
+            <div>
+              <label class="block text-xs tracking-widest uppercase text-gray-400 mb-2">Name <span class="text-red-400">*</span></label>
+              <input type="text" name="name" required placeholder="山田 太郎"
+                class="w-full border-b border-gray-300 pb-2 text-sm bg-transparent w-full focus:border-amber-600 transition">
+            </div>
+            <div>
+              <label class="block text-xs tracking-widest uppercase text-gray-400 mb-2">Email <span class="text-red-400">*</span></label>
+              <input type="email" name="email" required placeholder="example@email.com"
+                class="w-full border-b border-gray-300 pb-2 text-sm bg-transparent w-full focus:border-amber-600 transition">
+            </div>
+          </div>
+          <div>
+            <label class="block text-xs tracking-widest uppercase text-gray-400 mb-2">Phone</label>
+            <input type="tel" name="tel" placeholder="000-000-0000"
+              class="w-full border-b border-gray-300 pb-2 text-sm bg-transparent focus:border-amber-600 transition">
+          </div>
+          <div>
+            <label class="block text-xs tracking-widest uppercase text-gray-400 mb-2">Subject</label>
+            <select name="subject" class="w-full border-b border-gray-300 pb-2 text-sm bg-transparent text-gray-600 focus:border-amber-600 transition">
+              <option value="">選択してください</option>
+              <option value="styling">スタイリング相談</option>
+              <option value="order">商品の取り寄せ</option>
+              <option value="event">イベント・ポップアップについて</option>
+              <option value="other">その他</option>
+            </select>
+          </div>
+          <div>
+            <label class="block text-xs tracking-widest uppercase text-gray-400 mb-2">Message <span class="text-red-400">*</span></label>
+            <textarea name="message" required rows="6" placeholder="お問い合わせ内容をご記入ください"
+              class="w-full border-b border-gray-300 pb-2 text-sm bg-transparent resize-none focus:border-amber-600 transition"></textarea>
+          </div>
+          <div class="pt-2">
+            <button type="submit"
+              class="border text-xs tracking-widest uppercase px-12 py-4 transition hover:bg-gray-900 hover:text-white hover:border-gray-900"
+              style="border-color:#1a1a1a;color:#1a1a1a">
+              Send Message
+            </button>
+          </div>
+          <p class="text-xs text-gray-300">送信後、2営業日以内にご返信いたします。</p>
+        </form>
+      </div>
+
+    </div>
+  </section>
+
+  <footer style="background:var(--dark)" class="text-gray-500 py-16">
+    <div class="max-w-6xl mx-auto px-6">
+      <div class="flex flex-col md:flex-row justify-between gap-12 mb-12">
+        <div>
+          <p class="garamond text-3xl text-white tracking-[0.2em] font-light mb-3">BLANC</p>
+          <p class="text-sm leading-relaxed">〒000-0000 ○○県○○市○○町4-5-6<br>TEL: 000-000-0001<br>11:00〜20:00（水曜定休）</p>
+        </div>
+        <div class="text-xs tracking-widest uppercase">
+          <p class="text-white mb-4">Menu</p>
+          <ul class="space-y-2.5">
+            <li><a href="index.html" class="hover:text-white transition">Top</a></li>
+            <li><a href="about.html" class="hover:text-white transition">About</a></li>
+            <li><a href="products.html" class="hover:text-white transition">Collection</a></li>
+            <li><a href="news.html" class="hover:text-white transition">News</a></li>
+            <li><a href="contact.html" class="hover:text-white transition">Contact</a></li>
+          </ul>
+        </div>
+      </div>
+      <div class="border-t border-gray-800 pt-6 flex justify-between">
+        <p class="text-xs text-gray-700">© 2025 BLANC Select Shop</p>
+        <a href="../../index.html" class="text-xs text-gray-700 hover:text-gray-400">【サンプルサイト】</a>
+      </div>
+    </div>
+  </footer>
+
+</body>
+</html>

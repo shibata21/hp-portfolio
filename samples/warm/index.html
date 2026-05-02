@@ -1,0 +1,231 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>まるや食堂 — 地元の味、毎日のおかず</title>
+  <script src="https://cdn.tailwindcss.com"></script>
+  <link href="https://fonts.googleapis.com/css2?family=M+PLUS+Rounded+1c:wght@400;500;700;800&family=Noto+Sans+JP:wght@300;400;500&display=swap" rel="stylesheet">
+  <style>
+    :root { --orange: #d94f1e; --yellow: #f5a623; --bg: #fffbf5; --text: #2d2013; }
+    body { font-family: 'M PLUS Rounded 1c', 'Noto Sans JP', sans-serif; background: var(--bg); color: var(--text); }
+    .nav-link { color: #6b5842; transition: color 0.2s; }
+    .nav-link:hover, .nav-link.active { color: var(--orange); }
+    .btn-orange { background: var(--orange); color: #fff; }
+    .btn-orange:hover { background: #c04418; }
+  </style>
+</head>
+<body>
+
+  <div class="bg-orange-50 border-b border-orange-100 text-xs text-orange-400 py-2">
+    <div class="max-w-5xl mx-auto px-6">
+      <a href="../../index.html" class="hover:text-orange-700 transition">← デザイン一覧に戻る</a>
+      <span class="mx-2">|</span>
+      <span class="text-orange-300">サンプル: Warm — 惣菜店「まるや食堂」</span>
+    </div>
+  </div>
+
+  <!-- Nav -->
+  <nav class="bg-white sticky top-0 z-50 shadow-sm">
+    <div class="max-w-5xl mx-auto px-6 py-4 flex items-center justify-between">
+      <div class="flex items-center gap-3">
+        <div class="w-10 h-10 rounded-full flex items-center justify-center text-white font-bold text-lg" style="background:var(--orange)">ま</div>
+        <div>
+          <p class="font-bold text-base leading-none" style="color:var(--text)">まるや食堂</p>
+          <p class="text-xs text-orange-400">地元の味、毎日のおかず</p>
+        </div>
+      </div>
+      <div class="hidden md:flex items-center gap-7 text-sm font-medium">
+        <a href="index.html" class="nav-link active">トップ</a>
+        <a href="about.html" class="nav-link">お店について</a>
+        <a href="products.html" class="nav-link">お惣菜メニュー</a>
+        <a href="news.html" class="nav-link">お知らせ</a>
+        <a href="contact.html" class="btn-orange px-5 py-2.5 rounded-full text-sm font-medium transition">お問い合わせ</a>
+      </div>
+    </div>
+  </nav>
+
+  <!-- Hero -->
+  <section class="relative overflow-hidden" style="background:linear-gradient(135deg,#fff3e0 0%,#ffe0b2 100%);min-height:80vh">
+    <div class="max-w-5xl mx-auto px-6 py-20 flex flex-col md:flex-row items-center gap-12">
+      <div class="flex-1">
+        <div class="inline-block bg-orange-100 text-orange-600 text-xs font-bold px-4 py-1.5 rounded-full mb-5">
+          🍱 毎日手作り・無添加
+        </div>
+        <h1 class="text-5xl md:text-6xl font-extrabold leading-tight mb-5" style="color:var(--text)">
+          ほっとする、<br>
+          <span style="color:var(--orange)">おふくろの味</span>
+        </h1>
+        <p class="text-lg leading-loose mb-8" style="color:#6b5842">
+          地元の野菜と厳選素材で、毎朝丁寧に手作りしています。<br>
+          お弁当・お惣菜・仕出し料理など、<br>
+          日々の食卓をおいしくサポートします。
+        </p>
+        <div class="flex gap-4 flex-wrap">
+          <a href="products.html" class="btn-orange px-8 py-4 rounded-full font-bold text-sm transition inline-block">今日のメニューを見る</a>
+          <a href="contact.html" class="border-2 px-8 py-4 rounded-full font-bold text-sm transition inline-block hover:bg-orange-50" style="border-color:var(--orange);color:var(--orange)">仕出しのご相談</a>
+        </div>
+      </div>
+      <div class="flex-1">
+        <div class="relative">
+          <img src="https://picsum.photos/seed/food50/600/500" alt="本日のお惣菜" class="w-full rounded-3xl shadow-2xl object-cover h-80">
+          <div class="absolute -bottom-4 -left-4 bg-white rounded-2xl shadow-lg p-4 flex items-center gap-3">
+            <span class="text-2xl">👨‍🍳</span>
+            <div>
+              <p class="font-bold text-xs" style="color:var(--text)">今日も手作り</p>
+              <p class="text-xs text-orange-400">毎朝6時から仕込み開始</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="absolute top-10 right-10 w-32 h-32 rounded-full opacity-20" style="background:var(--yellow)"></div>
+    <div class="absolute bottom-10 left-6 w-20 h-20 rounded-full opacity-15" style="background:var(--orange)"></div>
+  </section>
+
+  <!-- Today's Special -->
+  <section class="py-16 relative" style="background:#fff">
+    <div class="max-w-5xl mx-auto px-6">
+      <div class="text-center mb-10">
+        <p class="text-xs font-bold tracking-wide text-orange-400 uppercase mb-1">Today's Menu</p>
+        <h2 class="text-3xl font-extrabold" style="color:var(--text)">本日のおすすめ</h2>
+      </div>
+      <div class="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-6">
+        <div class="rounded-2xl overflow-hidden shadow-md hover:shadow-xl transition bg-white">
+          <div class="overflow-hidden h-44">
+            <img src="https://picsum.photos/seed/fd1/400/300" alt="肉じゃが" class="w-full h-full object-cover hover:scale-105 transition-transform duration-500">
+          </div>
+          <div class="p-4">
+            <span class="text-xs bg-orange-100 text-orange-600 px-2 py-0.5 rounded-full font-medium">人気No.1</span>
+            <h3 class="font-bold mt-2 mb-0.5">肉じゃが（大）</h3>
+            <p class="text-xs text-gray-500 mb-2">地元産じゃがいもをたっぷり使用</p>
+            <p class="font-extrabold text-orange-500 text-lg">¥480</p>
+          </div>
+        </div>
+        <div class="rounded-2xl overflow-hidden shadow-md hover:shadow-xl transition bg-white">
+          <div class="overflow-hidden h-44">
+            <img src="https://picsum.photos/seed/fd2/400/300" alt="筑前煮" class="w-full h-full object-cover hover:scale-105 transition-transform duration-500">
+          </div>
+          <div class="p-4">
+            <span class="text-xs bg-yellow-100 text-yellow-700 px-2 py-0.5 rounded-full font-medium">おすすめ</span>
+            <h3 class="font-bold mt-2 mb-0.5">筑前煮</h3>
+            <p class="text-xs text-gray-500 mb-2">根菜たっぷり、だしが染みた一品</p>
+            <p class="font-extrabold text-orange-500 text-lg">¥420</p>
+          </div>
+        </div>
+        <div class="rounded-2xl overflow-hidden shadow-md hover:shadow-xl transition bg-white">
+          <div class="overflow-hidden h-44">
+            <img src="https://picsum.photos/seed/fd3/400/300" alt="唐揚げ" class="w-full h-full object-cover hover:scale-105 transition-transform duration-500">
+          </div>
+          <div class="p-4">
+            <span class="text-xs bg-red-100 text-red-600 px-2 py-0.5 rounded-full font-medium">本日限定</span>
+            <h3 class="font-bold mt-2 mb-0.5">特製から揚げ（5個）</h3>
+            <p class="text-xs text-gray-500 mb-2">秘伝のたれで24時間漬け込み</p>
+            <p class="font-extrabold text-orange-500 text-lg">¥550</p>
+          </div>
+        </div>
+      </div>
+      <div class="text-center mt-8">
+        <a href="products.html" class="inline-block border-2 px-8 py-3 rounded-full font-bold text-sm transition hover:bg-orange-50" style="border-color:var(--orange);color:var(--orange)">全メニューを見る</a>
+      </div>
+    </div>
+  </section>
+
+  <!-- Shop Features -->
+  <section class="py-16" style="background:var(--bg)">
+    <div class="max-w-5xl mx-auto px-6">
+      <div class="grid grid-cols-1 md:grid-cols-3 gap-6 text-center">
+        <div class="bg-white rounded-2xl p-8 shadow-sm">
+          <div class="text-4xl mb-4">🌾</div>
+          <h3 class="font-bold text-base mb-2">地元産食材使用</h3>
+          <p class="text-gray-500 text-sm leading-relaxed">近隣の農家さんから直接仕入れた新鮮な野菜を使用しています。</p>
+        </div>
+        <div class="bg-white rounded-2xl p-8 shadow-sm">
+          <div class="text-4xl mb-4">🚫</div>
+          <h3 class="font-bold text-base mb-2">無添加・保存料なし</h3>
+          <p class="text-gray-500 text-sm leading-relaxed">余計なものは一切入れません。安心してお子様にも食べていただけます。</p>
+        </div>
+        <div class="bg-white rounded-2xl p-8 shadow-sm">
+          <div class="text-4xl mb-4">📦</div>
+          <h3 class="font-bold text-base mb-2">仕出し・まとめ注文可</h3>
+          <p class="text-gray-500 text-sm leading-relaxed">法事・会合・職場のお弁当など、まとめてのご注文も承ります。</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- About Teaser -->
+  <section class="py-16 bg-white">
+    <div class="max-w-5xl mx-auto px-6 flex flex-col md:flex-row items-center gap-12">
+      <div class="flex-1">
+        <img src="https://picsum.photos/seed/cook1/600/450" alt="店主" class="w-full rounded-2xl shadow-md h-72 object-cover">
+      </div>
+      <div class="flex-1">
+        <p class="text-xs font-bold tracking-wide text-orange-400 uppercase mb-2">About</p>
+        <h2 class="text-3xl font-extrabold mb-4" style="color:var(--text)">「美味しい」が<br>生活を支える</h2>
+        <p class="text-gray-600 leading-loose text-sm mb-6">
+          創業30年、変わらない手作りの味。毎朝6時から仕込みを始め、
+          お昼のピークに向けて一品一品丁寧に作り上げます。
+          「今日も美味しかった」のひと言が何よりの励みです。
+        </p>
+        <a href="about.html" class="inline-block border-2 px-6 py-2.5 rounded-full text-sm font-bold hover:bg-orange-50 transition" style="border-color:var(--orange);color:var(--orange)">お店について</a>
+      </div>
+    </div>
+  </section>
+
+  <!-- News -->
+  <section class="py-14" style="background:var(--bg)">
+    <div class="max-w-5xl mx-auto px-6">
+      <div class="flex items-center justify-between mb-8">
+        <h2 class="text-2xl font-extrabold" style="color:var(--text)">📣 お知らせ</h2>
+        <a href="news.html" class="text-sm text-orange-500 hover:underline font-medium">もっと見る →</a>
+      </div>
+      <div class="bg-white rounded-2xl divide-y divide-gray-100 shadow-sm overflow-hidden">
+        <a href="news.html" class="flex items-center gap-5 p-5 hover:bg-orange-50 transition">
+          <time class="text-xs text-gray-400 shrink-0">2025.04.25</time>
+          <span class="text-xs bg-orange-100 text-orange-600 px-2 py-0.5 rounded-full shrink-0">お知らせ</span>
+          <p class="text-sm font-medium">GW期間中の営業時間についてのお知らせ</p>
+        </a>
+        <a href="news.html" class="flex items-center gap-5 p-5 hover:bg-orange-50 transition">
+          <time class="text-xs text-gray-400 shrink-0">2025.04.10</time>
+          <span class="text-xs bg-yellow-100 text-yellow-700 px-2 py-0.5 rounded-full shrink-0">新メニュー</span>
+          <p class="text-sm font-medium">春の新メニュー「たけのこご飯」が登場しました</p>
+        </a>
+        <a href="news.html" class="flex items-center gap-5 p-5 hover:bg-orange-50 transition">
+          <time class="text-xs text-gray-400 shrink-0">2025.03.28</time>
+          <span class="text-xs bg-green-100 text-green-700 px-2 py-0.5 rounded-full shrink-0">キャンペーン</span>
+          <p class="text-sm font-medium">4月より「週替わりお弁当」を新たに始めます</p>
+        </a>
+      </div>
+    </div>
+  </section>
+
+  <footer style="background:#2d2013" class="text-orange-200/60 py-14">
+    <div class="max-w-5xl mx-auto px-6">
+      <div class="flex flex-col md:flex-row justify-between gap-10 mb-10">
+        <div>
+          <div class="flex items-center gap-3 mb-3">
+            <div class="w-10 h-10 rounded-full flex items-center justify-center text-white font-bold" style="background:var(--orange)">ま</div>
+            <p class="text-white font-bold text-lg">まるや食堂</p>
+          </div>
+          <p class="text-sm leading-relaxed">〒000-0000 ○○県○○市○○町7-8-9<br>TEL: 000-000-0002<br>営業時間: 11:00〜19:00（月曜定休）</p>
+        </div>
+        <div class="text-sm">
+          <p class="text-white font-bold mb-3">メニュー</p>
+          <ul class="space-y-2">
+            <li><a href="index.html" class="hover:text-white transition">トップ</a></li>
+            <li><a href="about.html" class="hover:text-white transition">お店について</a></li>
+            <li><a href="products.html" class="hover:text-white transition">お惣菜メニュー</a></li>
+            <li><a href="news.html" class="hover:text-white transition">お知らせ</a></li>
+            <li><a href="contact.html" class="hover:text-white transition">お問い合わせ</a></li>
+          </ul>
+        </div>
+      </div>
+      <div class="border-t border-orange-900/40 pt-6 text-xs text-center text-orange-900">
+        © 2025 まるや食堂 — <a href="../../index.html" class="hover:text-orange-500">【サンプルサイト】</a>
+      </div>
+    </div>
+  </footer>
+
+</body>
+</html>

@@ -1,0 +1,169 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>お店について | Fleur</title>
+  <script src="https://cdn.tailwindcss.com"></script>
+  <link href="https://fonts.googleapis.com/css2?family=Noto+Serif+JP:wght@300;400;600&family=Noto+Sans+JP:wght@300;400;500&display=swap" rel="stylesheet">
+  <style>
+    body { font-family: 'Noto Sans JP', sans-serif; background: #faf7f2; color: #2d2926; }
+    .serif { font-family: 'Noto Serif JP', serif; }
+    .nav-link { color: #5a5046; transition: color 0.2s; }
+    .nav-link:hover, .nav-link.active { color: #4a7c59; }
+  </style>
+</head>
+<body>
+
+  <div class="bg-stone-100 border-b border-stone-200 text-xs text-stone-500 py-2">
+    <div class="max-w-5xl mx-auto px-6">
+      <a href="../../index.html" class="hover:text-stone-800 transition">← デザイン一覧に戻る</a>
+      <span class="mx-2">|</span>
+      <span class="text-stone-400">サンプル: Natural — 花屋「Fleur」</span>
+    </div>
+  </div>
+
+  <nav class="bg-white/95 backdrop-blur-sm sticky top-0 z-50 border-b border-stone-200 shadow-sm">
+    <div class="max-w-5xl mx-auto px-6 py-4 flex items-center justify-between">
+      <a href="index.html" class="serif text-2xl tracking-[0.15em] text-stone-800">Fleur</a>
+      <div class="hidden md:flex items-center gap-8 text-sm">
+        <a href="index.html" class="nav-link">トップ</a>
+        <a href="about.html" class="nav-link active font-medium">お店について</a>
+        <a href="products.html" class="nav-link">商品一覧</a>
+        <a href="news.html" class="nav-link">お知らせ</a>
+        <a href="contact.html" class="nav-link px-5 py-2 rounded-full text-white text-xs font-medium" style="background:#4a7c59">お問い合わせ</a>
+      </div>
+    </div>
+  </nav>
+
+  <!-- Page Header -->
+  <section class="py-16 text-center" style="background:linear-gradient(160deg,#e8f0e4,#f5ede0)">
+    <p class="text-xs tracking-widest text-green-700 uppercase font-medium mb-2">About</p>
+    <h1 class="serif text-4xl text-stone-800">お店について</h1>
+  </section>
+
+  <!-- Story -->
+  <section class="py-20">
+    <div class="max-w-5xl mx-auto px-6 flex flex-col md:flex-row items-center gap-16">
+      <div class="flex-1">
+        <img src="https://picsum.photos/seed/florist1/700/550" alt="店内の様子" class="w-full rounded-2xl shadow-md h-80 object-cover">
+      </div>
+      <div class="flex-1">
+        <p class="text-xs tracking-widest text-green-700 uppercase font-medium mb-3">Our Story</p>
+        <h2 class="serif text-3xl text-stone-800 mb-5">花と出会い、<br>花と生きる</h2>
+        <p class="text-stone-600 leading-loose text-sm mb-4">
+          代表の田中花子が、祖母の小さな庭から花への愛を育み、2012年に「Fleur」を開業しました。
+          最初は路地裏の10坪ほどの小さなお店でしたが、地域の方々に支えていただき、今年で13年目を迎えます。
+        </p>
+        <p class="text-stone-600 leading-loose text-sm">
+          「花は特別な日のためだけのものではない」という信念のもと、毎日の暮らしに取り入れやすい
+          リーズナブルな一輪売りから、特別な贈り物まで幅広くご用意しています。
+        </p>
+      </div>
+    </div>
+  </section>
+
+  <!-- Values -->
+  <section class="py-20" style="background:#f0ebe2">
+    <div class="max-w-5xl mx-auto px-6">
+      <div class="text-center mb-12">
+        <p class="text-xs tracking-widest text-green-700 uppercase font-medium mb-2">Our Values</p>
+        <h2 class="serif text-3xl text-stone-800">3つのこだわり</h2>
+      </div>
+      <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
+        <div class="bg-white p-8 rounded-2xl text-center shadow-sm">
+          <div class="w-16 h-16 rounded-full flex items-center justify-center mx-auto mb-5" style="background:#e8f0e4">
+            <svg class="w-7 h-7 text-green-700" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5" d="M12 3v1m0 16v1M4.22 4.22l.71.71m12.02 12.02.71.71M1 12h2m18 0h2M4.22 19.78l.71-.71M18.95 5.05l.71-.71"/></svg>
+          </div>
+          <h3 class="serif text-lg text-stone-800 mb-3">毎朝の新鮮仕入れ</h3>
+          <p class="text-stone-500 text-sm leading-relaxed">市場に毎朝足を運び、その日一番状態の良い花材だけを厳選して仕入れています。</p>
+        </div>
+        <div class="bg-white p-8 rounded-2xl text-center shadow-sm">
+          <div class="w-16 h-16 rounded-full flex items-center justify-center mx-auto mb-5" style="background:#e8f0e4">
+            <svg class="w-7 h-7 text-green-700" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5" d="M4.318 6.318a4.5 4.5 0 000 6.364L12 20.364l7.682-7.682a4.5 4.5 0 00-6.364-6.364L12 7.636l-1.318-1.318a4.5 4.5 0 00-6.364 0z"/></svg>
+          </div>
+          <h3 class="serif text-lg text-stone-800 mb-3">一つひとつ手作り</h3>
+          <p class="text-stone-500 text-sm leading-relaxed">機械に頼らず、スタッフが丁寧に手作業で仕上げます。お客様の想いを花に込めて。</p>
+        </div>
+        <div class="bg-white p-8 rounded-2xl text-center shadow-sm">
+          <div class="w-16 h-16 rounded-full flex items-center justify-center mx-auto mb-5" style="background:#e8f0e4">
+            <svg class="w-7 h-7 text-green-700" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5" d="M17 20h5v-2a3 3 0 00-5.356-1.857M17 20H7m10 0v-2c0-.656-.126-1.283-.356-1.857M7 20H2v-2a3 3 0 015.356-1.857M7 20v-2c0-.656.126-1.283.356-1.857m0 0a5.002 5.002 0 019.288 0"/></svg>
+          </div>
+          <h3 class="serif text-lg text-stone-800 mb-3">地域に根ざした接客</h3>
+          <p class="text-stone-500 text-sm leading-relaxed">お客様のお顔とお名前を覚え、ライフスタイルに合わせたご提案を心がけています。</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Staff -->
+  <section class="py-20">
+    <div class="max-w-5xl mx-auto px-6">
+      <div class="text-center mb-12">
+        <p class="text-xs tracking-widest text-green-700 uppercase font-medium mb-2">Staff</p>
+        <h2 class="serif text-3xl text-stone-800">スタッフ紹介</h2>
+      </div>
+      <div class="grid grid-cols-1 md:grid-cols-2 gap-10 max-w-2xl mx-auto">
+        <div class="text-center">
+          <img src="https://picsum.photos/seed/person1/300/300" alt="田中 花子" class="w-36 h-36 rounded-full object-cover mx-auto mb-4 shadow-md">
+          <p class="serif text-lg text-stone-800 mb-0.5">田中 花子</p>
+          <p class="text-xs text-green-600 font-medium mb-3">オーナー・フローリスト</p>
+          <p class="text-stone-500 text-sm leading-relaxed">フランスでフラワーアレンジメントを学び、帰国後に「Fleur」を開業。自然体で花を楽しむライフスタイルを提案しています。</p>
+        </div>
+        <div class="text-center">
+          <img src="https://picsum.photos/seed/person2/300/300" alt="鈴木 緑" class="w-36 h-36 rounded-full object-cover mx-auto mb-4 shadow-md">
+          <p class="serif text-lg text-stone-800 mb-0.5">鈴木 緑</p>
+          <p class="text-xs text-green-600 font-medium mb-3">フローリスト</p>
+          <p class="text-stone-500 text-sm leading-relaxed">観葉植物のスペシャリスト。インテリアとしての植物の取り入れ方や育て方のアドバイスを得意としています。</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Shop Info -->
+  <section class="py-16" style="background:#f0ebe2">
+    <div class="max-w-3xl mx-auto px-6 text-center">
+      <h2 class="serif text-2xl text-stone-800 mb-8">店舗情報</h2>
+      <div class="bg-white rounded-2xl p-8 shadow-sm text-left grid grid-cols-1 md:grid-cols-2 gap-6 text-sm">
+        <div class="space-y-4">
+          <div><span class="text-green-700 font-medium block mb-0.5">住所</span><span class="text-stone-600">〒000-0000 ○○県○○市○○町1-2-3</span></div>
+          <div><span class="text-green-700 font-medium block mb-0.5">電話</span><span class="text-stone-600">000-000-0000</span></div>
+          <div><span class="text-green-700 font-medium block mb-0.5">メール</span><span class="text-stone-600">info@fleur-sample.jp</span></div>
+        </div>
+        <div class="space-y-4">
+          <div><span class="text-green-700 font-medium block mb-0.5">営業時間</span><span class="text-stone-600">10:00〜19:00</span></div>
+          <div><span class="text-green-700 font-medium block mb-0.5">定休日</span><span class="text-stone-600">火曜日</span></div>
+          <div><span class="text-green-700 font-medium block mb-0.5">駐車場</span><span class="text-stone-600">店舗前に3台</span></div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <footer style="background:#2d2926" class="text-stone-400 py-14">
+    <div class="max-w-5xl mx-auto px-6">
+      <div class="flex flex-col md:flex-row justify-between gap-10 mb-10">
+        <div>
+          <p class="serif text-2xl text-white tracking-widest mb-2">Fleur</p>
+          <p class="text-sm leading-relaxed">〒000-0000 ○○県○○市○○町1-2-3<br>TEL: 000-000-0000<br>営業時間: 10:00〜19:00（火曜定休）</p>
+        </div>
+        <div class="flex gap-12 text-sm">
+          <div>
+            <p class="text-white font-medium mb-3">メニュー</p>
+            <ul class="space-y-2">
+              <li><a href="index.html" class="hover:text-white transition">トップ</a></li>
+              <li><a href="about.html" class="hover:text-white transition">お店について</a></li>
+              <li><a href="products.html" class="hover:text-white transition">商品一覧</a></li>
+              <li><a href="news.html" class="hover:text-white transition">お知らせ</a></li>
+              <li><a href="contact.html" class="hover:text-white transition">お問い合わせ</a></li>
+            </ul>
+          </div>
+        </div>
+      </div>
+      <div class="border-t border-stone-700 pt-6 text-xs text-center text-stone-600">
+        © 2025 Fleur. All rights reserved. — <a href="../../index.html" class="hover:text-stone-400">【サンプルサイト】</a>
+      </div>
+    </div>
+  </footer>
+
+</body>
+</html>

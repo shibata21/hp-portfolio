@@ -1,0 +1,170 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>お問い合わせ | まるや食堂</title>
+  <script src="https://cdn.tailwindcss.com"></script>
+  <link href="https://fonts.googleapis.com/css2?family=M+PLUS+Rounded+1c:wght@400;500;700;800&family=Noto+Sans+JP:wght@300;400;500&display=swap" rel="stylesheet">
+  <style>
+    :root { --orange: #d94f1e; --yellow: #f5a623; --bg: #fffbf5; --text: #2d2013; }
+    body { font-family: 'M PLUS Rounded 1c', 'Noto Sans JP', sans-serif; background: var(--bg); color: var(--text); }
+    .nav-link { color: #6b5842; transition: color 0.2s; }
+    .nav-link:hover, .nav-link.active { color: var(--orange); }
+    input, textarea, select { outline: none; transition: border-color 0.2s, box-shadow 0.2s; }
+    input:focus, textarea:focus, select:focus { border-color: var(--orange); box-shadow: 0 0 0 3px rgba(217,79,30,0.1); }
+  </style>
+</head>
+<body>
+
+  <div class="bg-orange-50 border-b border-orange-100 text-xs text-orange-400 py-2">
+    <div class="max-w-5xl mx-auto px-6">
+      <a href="../../index.html" class="hover:text-orange-700 transition">← デザイン一覧に戻る</a>
+      <span class="mx-2">|</span>
+      <span class="text-orange-300">サンプル: Warm — 惣菜店「まるや食堂」</span>
+    </div>
+  </div>
+
+  <nav class="bg-white sticky top-0 z-50 shadow-sm">
+    <div class="max-w-5xl mx-auto px-6 py-4 flex items-center justify-between">
+      <div class="flex items-center gap-3">
+        <div class="w-10 h-10 rounded-full flex items-center justify-center text-white font-bold text-lg" style="background:var(--orange)">ま</div>
+        <p class="font-bold" style="color:var(--text)">まるや食堂</p>
+      </div>
+      <div class="hidden md:flex items-center gap-7 text-sm font-medium">
+        <a href="index.html" class="nav-link">トップ</a>
+        <a href="about.html" class="nav-link">お店について</a>
+        <a href="products.html" class="nav-link">お惣菜メニュー</a>
+        <a href="news.html" class="nav-link">お知らせ</a>
+        <a href="contact.html" class="nav-link active px-5 py-2.5 rounded-full text-white transition" style="background:var(--orange)">お問い合わせ</a>
+      </div>
+    </div>
+  </nav>
+
+  <section class="py-14 text-center" style="background:linear-gradient(135deg,#fff3e0,#ffe0b2)">
+    <p class="text-xs font-bold tracking-wide text-orange-400 uppercase mb-2">Contact</p>
+    <h1 class="text-4xl font-extrabold" style="color:var(--text)">お問い合わせ</h1>
+  </section>
+
+  <section class="py-14">
+    <div class="max-w-5xl mx-auto px-6 flex flex-col md:flex-row gap-14">
+
+      <!-- Info -->
+      <div class="md:w-72 shrink-0">
+        <div class="bg-white rounded-2xl p-6 shadow-sm space-y-5 text-sm mb-6">
+          <div class="flex items-start gap-3">
+            <span class="text-xl">📍</span>
+            <div>
+              <p class="font-bold mb-0.5">住所</p>
+              <p class="text-gray-500 leading-relaxed">〒000-0000<br>○○県○○市○○町7-8-9</p>
+            </div>
+          </div>
+          <div class="flex items-start gap-3">
+            <span class="text-xl">📞</span>
+            <div>
+              <p class="font-bold mb-0.5">電話番号</p>
+              <p class="text-gray-500">000-000-0002</p>
+            </div>
+          </div>
+          <div class="flex items-start gap-3">
+            <span class="text-xl">🕐</span>
+            <div>
+              <p class="font-bold mb-0.5">営業時間</p>
+              <p class="text-gray-500">11:00〜19:00<br>定休日：月曜日</p>
+            </div>
+          </div>
+          <div class="flex items-start gap-3">
+            <span class="text-xl">🚃</span>
+            <div>
+              <p class="font-bold mb-0.5">アクセス</p>
+              <p class="text-gray-500">○○駅 徒歩8分<br>駐車場3台あり</p>
+            </div>
+          </div>
+        </div>
+        <div class="bg-orange-50 border border-orange-200 rounded-2xl p-5 text-sm">
+          <p class="font-bold mb-2" style="color:var(--orange)">📦 まとめ注文のご相談</p>
+          <p class="text-gray-600 text-xs leading-relaxed">法事・会議・イベントのお弁当など、10食以上のご注文は前日13時までにお電話またはこのフォームよりご連絡ください。</p>
+        </div>
+      </div>
+
+      <!-- Form -->
+      <div class="flex-1">
+        <h2 class="text-2xl font-extrabold mb-7" style="color:var(--text)">メールでのお問い合わせ</h2>
+        <!-- Formspree: action属性を実際のFormspreeエンドポイントに変更してください -->
+        <form action="https://formspree.io/f/XXXXXXXX" method="POST" class="space-y-5">
+          <div class="grid grid-cols-1 md:grid-cols-2 gap-5">
+            <div>
+              <label class="block text-xs font-bold mb-1.5" style="color:var(--text)">お名前 <span class="text-red-400">*</span></label>
+              <input type="text" name="name" required placeholder="山田 花子"
+                class="w-full border-2 border-gray-200 rounded-xl px-4 py-3 text-sm bg-white font-medium">
+            </div>
+            <div>
+              <label class="block text-xs font-bold mb-1.5" style="color:var(--text)">メールアドレス <span class="text-red-400">*</span></label>
+              <input type="email" name="email" required placeholder="example@email.com"
+                class="w-full border-2 border-gray-200 rounded-xl px-4 py-3 text-sm bg-white font-medium">
+            </div>
+          </div>
+          <div>
+            <label class="block text-xs font-bold mb-1.5" style="color:var(--text)">電話番号</label>
+            <input type="tel" name="tel" placeholder="000-000-0000"
+              class="w-full border-2 border-gray-200 rounded-xl px-4 py-3 text-sm bg-white font-medium">
+          </div>
+          <div>
+            <label class="block text-xs font-bold mb-1.5" style="color:var(--text)">お問い合わせ種別</label>
+            <select name="category" class="w-full border-2 border-gray-200 rounded-xl px-4 py-3 text-sm bg-white text-gray-600 font-medium">
+              <option value="">選択してください</option>
+              <option value="order">まとめ注文・仕出し</option>
+              <option value="menu">メニューについて</option>
+              <option value="allergy">アレルギーについて</option>
+              <option value="other">その他</option>
+            </select>
+          </div>
+          <div>
+            <label class="block text-xs font-bold mb-1.5" style="color:var(--text)">お問い合わせ内容 <span class="text-red-400">*</span></label>
+            <textarea name="message" required rows="5" placeholder="例）12名分のお弁当をお願いしたいです。予算は一人800円程度で…"
+              class="w-full border-2 border-gray-200 rounded-xl px-4 py-3 text-sm bg-white resize-none font-medium"></textarea>
+          </div>
+          <button type="submit"
+            class="w-full py-4 rounded-xl text-white font-extrabold text-sm transition hover:opacity-90"
+            style="background:var(--orange)">
+            📨 送信する
+          </button>
+          <p class="text-xs text-gray-400 text-center">
+            お急ぎの場合はお電話（000-000-0002）にてお問い合わせください。<br>
+            メールは2営業日以内にご返信します。
+          </p>
+        </form>
+      </div>
+
+    </div>
+  </section>
+
+  <footer style="background:#2d2013" class="text-orange-200/60 py-14">
+    <div class="max-w-5xl mx-auto px-6">
+      <div class="flex flex-col md:flex-row justify-between gap-10 mb-10">
+        <div>
+          <div class="flex items-center gap-3 mb-3">
+            <div class="w-10 h-10 rounded-full flex items-center justify-center text-white font-bold" style="background:var(--orange)">ま</div>
+            <p class="text-white font-bold text-lg">まるや食堂</p>
+          </div>
+          <p class="text-sm leading-relaxed">〒000-0000 ○○県○○市○○町7-8-9<br>TEL: 000-000-0002<br>営業時間: 11:00〜19:00（月曜定休）</p>
+        </div>
+        <div class="text-sm">
+          <p class="text-white font-bold mb-3">メニュー</p>
+          <ul class="space-y-2">
+            <li><a href="index.html" class="hover:text-white transition">トップ</a></li>
+            <li><a href="about.html" class="hover:text-white transition">お店について</a></li>
+            <li><a href="products.html" class="hover:text-white transition">お惣菜メニュー</a></li>
+            <li><a href="news.html" class="hover:text-white transition">お知らせ</a></li>
+            <li><a href="contact.html" class="hover:text-white transition">お問い合わせ</a></li>
+          </ul>
+        </div>
+      </div>
+      <div class="border-t border-orange-900/40 pt-6 text-xs text-center text-orange-900">
+        © 2025 まるや食堂 — <a href="../../index.html" class="hover:text-orange-500">【サンプルサイト】</a>
+      </div>
+    </div>
+  </footer>
+
+</body>
+</html>

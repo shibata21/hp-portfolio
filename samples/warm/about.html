@@ -1,0 +1,182 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>お店について | まるや食堂</title>
+  <script src="https://cdn.tailwindcss.com"></script>
+  <link href="https://fonts.googleapis.com/css2?family=M+PLUS+Rounded+1c:wght@400;500;700;800&family=Noto+Sans+JP:wght@300;400;500&display=swap" rel="stylesheet">
+  <style>
+    :root { --orange: #d94f1e; --yellow: #f5a623; --bg: #fffbf5; --text: #2d2013; }
+    body { font-family: 'M PLUS Rounded 1c', 'Noto Sans JP', sans-serif; background: var(--bg); color: var(--text); }
+    .nav-link { color: #6b5842; transition: color 0.2s; }
+    .nav-link:hover, .nav-link.active { color: var(--orange); }
+  </style>
+</head>
+<body>
+
+  <div class="bg-orange-50 border-b border-orange-100 text-xs text-orange-400 py-2">
+    <div class="max-w-5xl mx-auto px-6">
+      <a href="../../index.html" class="hover:text-orange-700 transition">← デザイン一覧に戻る</a>
+      <span class="mx-2">|</span>
+      <span class="text-orange-300">サンプル: Warm — 惣菜店「まるや食堂」</span>
+    </div>
+  </div>
+
+  <nav class="bg-white sticky top-0 z-50 shadow-sm">
+    <div class="max-w-5xl mx-auto px-6 py-4 flex items-center justify-between">
+      <div class="flex items-center gap-3">
+        <div class="w-10 h-10 rounded-full flex items-center justify-center text-white font-bold text-lg" style="background:var(--orange)">ま</div>
+        <p class="font-bold" style="color:var(--text)">まるや食堂</p>
+      </div>
+      <div class="hidden md:flex items-center gap-7 text-sm font-medium">
+        <a href="index.html" class="nav-link">トップ</a>
+        <a href="about.html" class="nav-link active" style="color:var(--orange)">お店について</a>
+        <a href="products.html" class="nav-link">お惣菜メニュー</a>
+        <a href="news.html" class="nav-link">お知らせ</a>
+        <a href="contact.html" class="px-5 py-2.5 rounded-full text-sm font-medium text-white transition" style="background:var(--orange)">お問い合わせ</a>
+      </div>
+    </div>
+  </nav>
+
+  <!-- Page Header -->
+  <section class="py-14 text-center" style="background:linear-gradient(135deg,#fff3e0,#ffe0b2)">
+    <p class="text-xs font-bold tracking-wide text-orange-400 uppercase mb-2">About</p>
+    <h1 class="text-4xl font-extrabold" style="color:var(--text)">お店について</h1>
+  </section>
+
+  <!-- Owner Message -->
+  <section class="py-16 bg-white">
+    <div class="max-w-5xl mx-auto px-6 flex flex-col md:flex-row items-center gap-14">
+      <div class="flex-1">
+        <img src="https://picsum.photos/seed/owner1/600/500" alt="店主" class="w-full rounded-3xl shadow-lg h-80 object-cover">
+      </div>
+      <div class="flex-1">
+        <p class="text-xs font-bold tracking-wide text-orange-400 uppercase mb-3">Owner's Message</p>
+        <h2 class="text-3xl font-extrabold mb-5" style="color:var(--text)">毎日食べても<br>飽きない味を</h2>
+        <p class="text-gray-600 leading-loose text-sm mb-3">
+          「まるや食堂」は1995年に私の母が開いた小さなお惣菜屋さんです。
+          子どもの頃から手伝いをしながら、台所に立つ母の背中を見て育ちました。
+        </p>
+        <p class="text-gray-600 leading-loose text-sm mb-5">
+          2代目として引き継いでから12年。味は変えず、時代に合わせた工夫を加えながら、
+          「毎日食べても飽きない」お惣菜を作り続けています。
+          地域の皆様の食卓の一隅を担えることが、私たちの誇りです。
+        </p>
+        <p class="text-right font-bold" style="color:var(--text)">— 店主 丸山 和子</p>
+      </div>
+    </div>
+  </section>
+
+  <!-- Commitments -->
+  <section class="py-16" style="background:var(--bg)">
+    <div class="max-w-5xl mx-auto px-6">
+      <div class="text-center mb-12">
+        <h2 class="text-3xl font-extrabold" style="color:var(--text)">私たちのこだわり</h2>
+      </div>
+      <div class="grid grid-cols-1 md:grid-cols-2 gap-8">
+        <div class="bg-white rounded-2xl p-8 flex gap-5 shadow-sm">
+          <div class="text-4xl shrink-0">🌿</div>
+          <div>
+            <h3 class="font-bold text-base mb-2">地元農家との直接取引</h3>
+            <p class="text-gray-500 text-sm leading-relaxed">半径20km以内の農家さんから週3回直接仕入れ。収穫したての新鮮な野菜を使うことで、素材の味が活きます。</p>
+          </div>
+        </div>
+        <div class="bg-white rounded-2xl p-8 flex gap-5 shadow-sm">
+          <div class="text-4xl shrink-0">🧂</div>
+          <div>
+            <h3 class="font-bold text-base mb-2">だし・調味料の徹底管理</h3>
+            <p class="text-gray-500 text-sm leading-relaxed">化学調味料不使用。かつおと昆布の合わせだしを毎朝引き、一切手を抜きません。塩分も少なめに調整しています。</p>
+          </div>
+        </div>
+        <div class="bg-white rounded-2xl p-8 flex gap-5 shadow-sm">
+          <div class="text-4xl shrink-0">🕕</div>
+          <div>
+            <h3 class="font-bold text-base mb-2">毎朝6時から仕込み</h3>
+            <p class="text-gray-500 text-sm leading-relaxed">開店前から丁寧に仕込みを行います。時間をかけてゆっくり煮込むことで、食材の中まで味が染み渡ります。</p>
+          </div>
+        </div>
+        <div class="bg-white rounded-2xl p-8 flex gap-5 shadow-sm">
+          <div class="text-4xl shrink-0">👶</div>
+          <div>
+            <h3 class="font-bold text-base mb-2">子どもにも安心な食材</h3>
+            <p class="text-gray-500 text-sm leading-relaxed">アレルギー表示を徹底し、保存料・着色料は一切使用しません。小さなお子様から年配の方まで安心してお召し上がりいただけます。</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Shop History -->
+  <section class="py-16 bg-white">
+    <div class="max-w-3xl mx-auto px-6 text-center">
+      <h2 class="text-3xl font-extrabold mb-12" style="color:var(--text)">あゆみ</h2>
+      <div class="relative">
+        <div class="absolute left-1/2 top-0 bottom-0 w-0.5 bg-orange-200 -translate-x-1/2"></div>
+        <div class="space-y-10">
+          <div class="flex gap-6 items-start text-left">
+            <div class="flex-1 text-right pr-8">
+              <p class="font-bold text-sm mb-1">1995年</p>
+              <p class="text-gray-500 text-xs leading-relaxed">丸山ハナ（現店主の母）が自宅の一角に「まるや食堂」を開業</p>
+            </div>
+            <div class="w-4 h-4 rounded-full shrink-0 mt-0.5 border-2 border-white z-10" style="background:var(--orange)"></div>
+            <div class="flex-1 pl-8"></div>
+          </div>
+          <div class="flex gap-6 items-start text-left">
+            <div class="flex-1 pr-8"></div>
+            <div class="w-4 h-4 rounded-full shrink-0 mt-0.5 border-2 border-white z-10" style="background:var(--orange)"></div>
+            <div class="flex-1 pl-8">
+              <p class="font-bold text-sm mb-1">2005年</p>
+              <p class="text-gray-500 text-xs leading-relaxed">現店舗に移転。スペースを広げ、イートインコーナーを設置</p>
+            </div>
+          </div>
+          <div class="flex gap-6 items-start text-left">
+            <div class="flex-1 text-right pr-8">
+              <p class="font-bold text-sm mb-1">2013年</p>
+              <p class="text-gray-500 text-xs leading-relaxed">娘の和子が2代目として引き継ぐ。地元農家との直接取引を開始</p>
+            </div>
+            <div class="w-4 h-4 rounded-full shrink-0 mt-0.5 border-2 border-white z-10" style="background:var(--orange)"></div>
+            <div class="flex-1 pl-8"></div>
+          </div>
+          <div class="flex gap-6 items-start text-left">
+            <div class="flex-1 pr-8"></div>
+            <div class="w-4 h-4 rounded-full shrink-0 mt-0.5 border-2 border-white z-10" style="background:var(--orange)"></div>
+            <div class="flex-1 pl-8">
+              <p class="font-bold text-sm mb-1">2025年</p>
+              <p class="text-gray-500 text-xs leading-relaxed">創業30周年。地域の皆様への感謝を込めた記念イベントを開催予定</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <footer style="background:#2d2013" class="text-orange-200/60 py-14">
+    <div class="max-w-5xl mx-auto px-6">
+      <div class="flex flex-col md:flex-row justify-between gap-10 mb-10">
+        <div>
+          <div class="flex items-center gap-3 mb-3">
+            <div class="w-10 h-10 rounded-full flex items-center justify-center text-white font-bold" style="background:var(--orange)">ま</div>
+            <p class="text-white font-bold text-lg">まるや食堂</p>
+          </div>
+          <p class="text-sm leading-relaxed">〒000-0000 ○○県○○市○○町7-8-9<br>TEL: 000-000-0002<br>営業時間: 11:00〜19:00（月曜定休）</p>
+        </div>
+        <div class="text-sm">
+          <p class="text-white font-bold mb-3">メニュー</p>
+          <ul class="space-y-2">
+            <li><a href="index.html" class="hover:text-white transition">トップ</a></li>
+            <li><a href="about.html" class="hover:text-white transition">お店について</a></li>
+            <li><a href="products.html" class="hover:text-white transition">お惣菜メニュー</a></li>
+            <li><a href="news.html" class="hover:text-white transition">お知らせ</a></li>
+            <li><a href="contact.html" class="hover:text-white transition">お問い合わせ</a></li>
+          </ul>
+        </div>
+      </div>
+      <div class="border-t border-orange-900/40 pt-6 text-xs text-center text-orange-900">
+        © 2025 まるや食堂 — <a href="../../index.html" class="hover:text-orange-500">【サンプルサイト】</a>
+      </div>
+    </div>
+  </footer>
+
+</body>
+</html>

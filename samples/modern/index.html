@@ -1,0 +1,222 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>BLANC — Select Shop</title>
+  <script src="https://cdn.tailwindcss.com"></script>
+  <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,300;0,400;0,600;1,300;1,400&family=Noto+Sans+JP:wght@300;400;500&display=swap" rel="stylesheet">
+  <style>
+    :root { --gold: #b8963e; --dark: #0f0f14; --mid: #1c1c24; }
+    body { font-family: 'Noto Sans JP', sans-serif; background: #fff; color: #1a1a1a; }
+    .garamond { font-family: 'Cormorant Garamond', serif; }
+    .nav-link { color: #555; transition: color 0.2s; letter-spacing: 0.05em; }
+    .nav-link:hover, .nav-link.active { color: #b8963e; }
+    .gold { color: var(--gold); }
+    .btn-gold { background: var(--gold); color: #fff; }
+    .btn-gold:hover { background: #9a7c30; }
+  </style>
+</head>
+<body>
+
+  <div style="background:#f5f5f5" class="border-b border-gray-200 text-xs text-gray-400 py-2">
+    <div class="max-w-6xl mx-auto px-6">
+      <a href="../../index.html" class="hover:text-gray-700 transition">← デザイン一覧に戻る</a>
+      <span class="mx-2">|</span>
+      <span class="text-gray-300">サンプル: Modern — セレクトショップ「BLANC」</span>
+    </div>
+  </div>
+
+  <!-- Nav -->
+  <nav class="bg-white sticky top-0 z-50 border-b border-gray-100">
+    <div class="max-w-6xl mx-auto px-6 py-5 flex items-center justify-between">
+      <a href="index.html" class="garamond text-3xl tracking-[0.2em] font-light" style="color:#0f0f14">BLANC</a>
+      <div class="hidden md:flex items-center gap-10 text-xs tracking-widest uppercase">
+        <a href="index.html" class="nav-link active">Top</a>
+        <a href="about.html" class="nav-link">About</a>
+        <a href="products.html" class="nav-link">Collection</a>
+        <a href="news.html" class="nav-link">News</a>
+        <a href="contact.html" class="nav-link">Contact</a>
+      </div>
+    </div>
+  </nav>
+
+  <!-- Hero -->
+  <section class="relative overflow-hidden" style="height:92vh;background:var(--dark)">
+    <img src="https://picsum.photos/seed/fashion100/1400/900" alt="Collection" class="absolute inset-0 w-full h-full object-cover opacity-50">
+    <div class="absolute inset-0 flex flex-col justify-end px-12 pb-20 max-w-6xl mx-auto">
+      <p class="garamond text-xs tracking-[0.3em] uppercase mb-4" style="color:var(--gold)">New Arrival 2025</p>
+      <h1 class="garamond text-6xl md:text-8xl font-light text-white leading-none mb-6">
+        Dressed<br><em>for You</em>
+      </h1>
+      <p class="text-gray-300 text-sm tracking-wide mb-8 max-w-sm leading-relaxed">
+        厳選したブランドと、こだわりのオリジナルアイテム。<br>
+        あなたのスタイルに寄り添う一着をご提案します。
+      </p>
+      <div class="flex gap-4">
+        <a href="products.html" class="btn-gold px-8 py-3.5 text-xs tracking-widest uppercase font-medium transition inline-block">View Collection</a>
+        <a href="about.html" class="border border-white/40 text-white px-8 py-3.5 text-xs tracking-widest uppercase hover:bg-white/10 transition inline-block">About Us</a>
+      </div>
+    </div>
+    <!-- Scroll indicator -->
+    <div class="absolute bottom-8 right-12 flex flex-col items-center gap-2">
+      <div class="w-px h-14 bg-white/30"></div>
+      <span class="text-white/40 text-xs tracking-widest">SCROLL</span>
+    </div>
+  </section>
+
+  <!-- New Arrivals -->
+  <section class="py-24">
+    <div class="max-w-6xl mx-auto px-6">
+      <div class="flex items-end justify-between mb-12">
+        <div>
+          <p class="text-xs tracking-[0.3em] uppercase mb-2" style="color:var(--gold)">New Arrivals</p>
+          <h2 class="garamond text-4xl font-light">新着アイテム</h2>
+        </div>
+        <a href="products.html" class="text-xs tracking-widest uppercase text-gray-400 hover:text-gray-900 transition border-b border-gray-300 pb-0.5">All Collection →</a>
+      </div>
+      <div class="grid grid-cols-2 md:grid-cols-4 gap-6">
+        <a href="products.html" class="group">
+          <div class="overflow-hidden mb-3 bg-gray-100" style="aspect-ratio:3/4">
+            <img src="https://picsum.photos/seed/cl1/400/530" alt="アイテム" class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-700">
+          </div>
+          <p class="text-xs text-gray-400 mb-0.5">Tops</p>
+          <p class="text-sm text-gray-900">リネンシャツ</p>
+          <p class="text-xs text-gray-500 mt-0.5">¥18,700</p>
+        </a>
+        <a href="products.html" class="group">
+          <div class="overflow-hidden mb-3 bg-gray-100" style="aspect-ratio:3/4">
+            <img src="https://picsum.photos/seed/cl2/400/530" alt="アイテム" class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-700">
+          </div>
+          <p class="text-xs text-gray-400 mb-0.5">Bottoms</p>
+          <p class="text-sm text-gray-900">ワイドパンツ</p>
+          <p class="text-xs text-gray-500 mt-0.5">¥24,200</p>
+        </a>
+        <a href="products.html" class="group">
+          <div class="overflow-hidden mb-3 bg-gray-100" style="aspect-ratio:3/4">
+            <img src="https://picsum.photos/seed/cl3/400/530" alt="アイテム" class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-700">
+          </div>
+          <p class="text-xs text-gray-400 mb-0.5">Outerwear</p>
+          <p class="text-sm text-gray-900">トレンチコート</p>
+          <p class="text-xs text-gray-500 mt-0.5">¥56,000</p>
+        </a>
+        <a href="products.html" class="group">
+          <div class="overflow-hidden mb-3 bg-gray-100" style="aspect-ratio:3/4">
+            <img src="https://picsum.photos/seed/cl4/400/530" alt="アイテム" class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-700">
+          </div>
+          <p class="text-xs text-gray-400 mb-0.5">Accessories</p>
+          <p class="text-sm text-gray-900">レザーバッグ</p>
+          <p class="text-xs text-gray-500 mt-0.5">¥38,500</p>
+        </a>
+      </div>
+    </div>
+  </section>
+
+  <!-- Brand Story -->
+  <section style="background:var(--dark)" class="py-24">
+    <div class="max-w-6xl mx-auto px-6 flex flex-col md:flex-row items-center gap-16">
+      <div class="flex-1">
+        <img src="https://picsum.photos/seed/store1/700/550" alt="店内" class="w-full h-80 object-cover">
+      </div>
+      <div class="flex-1 text-white">
+        <p class="text-xs tracking-[0.3em] uppercase mb-4" style="color:var(--gold)">Our Story</p>
+        <h2 class="garamond text-4xl font-light mb-6 leading-snug">纏うものが、<br><em>あなたを語る。</em></h2>
+        <p class="text-gray-400 leading-loose text-sm mb-8">
+          BLANCは「白紙」を意味します。どんな色にも染まれる余白を大切に、
+          着る人自身の個性を引き出すアイテムだけを厳選しています。
+          流行に左右されず、長く愛用できるクオリティにこだわり続けます。
+        </p>
+        <a href="about.html" class="text-xs tracking-widest uppercase border-b pb-0.5 transition hover:opacity-70" style="color:var(--gold);border-color:var(--gold)">Read More →</a>
+      </div>
+    </div>
+  </section>
+
+  <!-- Category Banner -->
+  <section class="py-20">
+    <div class="max-w-6xl mx-auto px-6">
+      <div class="grid grid-cols-1 md:grid-cols-3 gap-4">
+        <a href="products.html" class="relative overflow-hidden group h-80">
+          <img src="https://picsum.photos/seed/cat1/500/600" alt="Women" class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-700">
+          <div class="absolute inset-0 bg-black/30 group-hover:bg-black/50 transition"></div>
+          <div class="absolute inset-0 flex flex-col justify-end p-7">
+            <p class="garamond text-2xl text-white font-light tracking-wide">Women</p>
+            <p class="text-white/60 text-xs tracking-widest uppercase mt-1">Shop Now →</p>
+          </div>
+        </a>
+        <a href="products.html" class="relative overflow-hidden group h-80">
+          <img src="https://picsum.photos/seed/cat2/500/600" alt="Men" class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-700">
+          <div class="absolute inset-0 bg-black/30 group-hover:bg-black/50 transition"></div>
+          <div class="absolute inset-0 flex flex-col justify-end p-7">
+            <p class="garamond text-2xl text-white font-light tracking-wide">Men</p>
+            <p class="text-white/60 text-xs tracking-widest uppercase mt-1">Shop Now →</p>
+          </div>
+        </a>
+        <a href="products.html" class="relative overflow-hidden group h-80">
+          <img src="https://picsum.photos/seed/cat3/500/600" alt="Accessories" class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-700">
+          <div class="absolute inset-0 bg-black/30 group-hover:bg-black/50 transition"></div>
+          <div class="absolute inset-0 flex flex-col justify-end p-7">
+            <p class="garamond text-2xl text-white font-light tracking-wide">Accessories</p>
+            <p class="text-white/60 text-xs tracking-widest uppercase mt-1">Shop Now →</p>
+          </div>
+        </a>
+      </div>
+    </div>
+  </section>
+
+  <!-- News Teaser -->
+  <section class="py-16 border-t border-gray-100">
+    <div class="max-w-6xl mx-auto px-6">
+      <div class="flex items-end justify-between mb-8">
+        <h2 class="garamond text-3xl font-light">Latest News</h2>
+        <a href="news.html" class="text-xs tracking-widest text-gray-400 hover:text-gray-900 transition uppercase border-b border-gray-300 pb-0.5">All News →</a>
+      </div>
+      <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
+        <a href="news.html" class="group">
+          <time class="text-xs tracking-widest text-gray-300 uppercase">Apr 15, 2025</time>
+          <h3 class="text-sm text-gray-900 mt-2 mb-1 group-hover:underline">2025 SS コレクション入荷のお知らせ</h3>
+          <p class="text-xs text-gray-400">春夏の新コレクションが全点入荷しました。ぜひ店頭でご覧ください。</p>
+        </a>
+        <a href="news.html" class="group">
+          <time class="text-xs tracking-widest text-gray-300 uppercase">Apr 01, 2025</time>
+          <h3 class="text-sm text-gray-900 mt-2 mb-1 group-hover:underline">4月の営業カレンダーについて</h3>
+          <p class="text-xs text-gray-400">ゴールデンウィーク期間中の営業時間についてお知らせします。</p>
+        </a>
+        <a href="news.html" class="group">
+          <time class="text-xs tracking-widest text-gray-300 uppercase">Mar 20, 2025</time>
+          <h3 class="text-sm text-gray-900 mt-2 mb-1 group-hover:underline">リニューアルオープンのお礼</h3>
+          <p class="text-xs text-gray-400">多くのお客様にお越しいただき、誠にありがとうございました。</p>
+        </a>
+      </div>
+    </div>
+  </section>
+
+  <!-- Footer -->
+  <footer style="background:var(--dark)" class="text-gray-500 py-16">
+    <div class="max-w-6xl mx-auto px-6">
+      <div class="flex flex-col md:flex-row justify-between gap-12 mb-12">
+        <div>
+          <p class="garamond text-3xl text-white tracking-[0.2em] font-light mb-3">BLANC</p>
+          <p class="text-sm leading-relaxed">〒000-0000 ○○県○○市○○町4-5-6<br>TEL: 000-000-0001<br>11:00〜20:00（水曜定休）</p>
+        </div>
+        <div class="flex gap-16 text-xs tracking-widest uppercase">
+          <div>
+            <p class="text-white mb-4">Menu</p>
+            <ul class="space-y-2.5">
+              <li><a href="index.html" class="hover:text-white transition">Top</a></li>
+              <li><a href="about.html" class="hover:text-white transition">About</a></li>
+              <li><a href="products.html" class="hover:text-white transition">Collection</a></li>
+              <li><a href="news.html" class="hover:text-white transition">News</a></li>
+              <li><a href="contact.html" class="hover:text-white transition">Contact</a></li>
+            </ul>
+          </div>
+        </div>
+      </div>
+      <div class="border-t border-gray-800 pt-6 flex justify-between items-center">
+        <p class="text-xs text-gray-700">© 2025 BLANC Select Shop</p>
+        <a href="../../index.html" class="text-xs text-gray-700 hover:text-gray-400">【サンプルサイト】</a>
+      </div>
+    </div>
+  </footer>
+
+</body>
+</html>

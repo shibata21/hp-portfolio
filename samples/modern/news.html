@@ -1,0 +1,155 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>News | BLANC</title>
+  <script src="https://cdn.tailwindcss.com"></script>
+  <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,300;0,400;0,600;1,300;1,400&family=Noto+Sans+JP:wght@300;400;500&display=swap" rel="stylesheet">
+  <style>
+    :root { --gold: #b8963e; --dark: #0f0f14; }
+    body { font-family: 'Noto Sans JP', sans-serif; background: #fff; color: #1a1a1a; }
+    .garamond { font-family: 'Cormorant Garamond', serif; }
+    .nav-link { color: #555; transition: color 0.2s; }
+    .nav-link:hover, .nav-link.active { color: var(--gold); }
+  </style>
+</head>
+<body>
+
+  <div style="background:#f5f5f5" class="border-b border-gray-200 text-xs text-gray-400 py-2">
+    <div class="max-w-6xl mx-auto px-6">
+      <a href="../../index.html" class="hover:text-gray-700 transition">← デザイン一覧に戻る</a>
+      <span class="mx-2">|</span>
+      <span class="text-gray-300">サンプル: Modern — セレクトショップ「BLANC」</span>
+    </div>
+  </div>
+
+  <nav class="bg-white sticky top-0 z-50 border-b border-gray-100">
+    <div class="max-w-6xl mx-auto px-6 py-5 flex items-center justify-between">
+      <a href="index.html" class="garamond text-3xl tracking-[0.2em] font-light" style="color:#0f0f14">BLANC</a>
+      <div class="hidden md:flex items-center gap-10 text-xs tracking-widest uppercase">
+        <a href="index.html" class="nav-link">Top</a>
+        <a href="about.html" class="nav-link">About</a>
+        <a href="products.html" class="nav-link">Collection</a>
+        <a href="news.html" class="nav-link active" style="color:var(--gold)">News</a>
+        <a href="contact.html" class="nav-link">Contact</a>
+      </div>
+    </div>
+  </nav>
+
+  <section class="py-16 text-center border-b border-gray-100">
+    <p class="garamond text-xs tracking-[0.3em] uppercase mb-2" style="color:var(--gold)">Latest</p>
+    <h1 class="garamond text-5xl font-light">News</h1>
+  </section>
+
+  <!-- Featured -->
+  <section class="py-16 border-b border-gray-100">
+    <div class="max-w-6xl mx-auto px-6 flex flex-col md:flex-row gap-12 items-center">
+      <div class="md:w-1/2">
+        <img src="https://picsum.photos/seed/news1/700/500" alt="新コレクション" class="w-full h-72 object-cover">
+      </div>
+      <div class="md:w-1/2">
+        <time class="text-xs tracking-widest text-gray-300 uppercase">Apr 15, 2025</time>
+        <p class="text-xs mt-1 mb-3 tracking-widest uppercase" style="color:var(--gold)">Collection</p>
+        <h2 class="garamond text-3xl font-light mb-4 leading-snug">2025 SS コレクション<br>全点入荷のお知らせ</h2>
+        <p class="text-gray-400 text-sm leading-loose">
+          春夏コレクションが全アイテム入荷しました。今シーズンのテーマは「Light & Shadow」。
+          光と影のコントラストをモチーフにした、洗練されたアイテムがラインナップしています。
+          ぜひ店頭でご覧ください。
+        </p>
+        <a href="#" class="inline-block mt-6 text-xs tracking-widest uppercase border-b pb-0.5 hover:opacity-70 transition" style="color:var(--gold);border-color:var(--gold)">Read More →</a>
+      </div>
+    </div>
+  </section>
+
+  <!-- News List -->
+  <section class="py-16">
+    <div class="max-w-4xl mx-auto px-6">
+      <div class="space-y-0">
+
+        <a href="#" class="group flex items-start gap-6 py-6 border-b border-gray-100 hover:bg-gray-50 px-4 -mx-4 transition">
+          <div class="shrink-0">
+            <time class="text-xs tracking-widest text-gray-300 uppercase block">Apr 01, 2025</time>
+            <span class="text-xs tracking-widest uppercase mt-1 block" style="color:var(--gold)">Info</span>
+          </div>
+          <div class="flex-1">
+            <h3 class="text-sm group-hover:underline">4月・ゴールデンウィーク営業カレンダーについて</h3>
+            <p class="text-xs text-gray-400 mt-1">GW期間中（4月29日〜5月6日）は無休で営業いたします。</p>
+          </div>
+        </a>
+
+        <a href="#" class="group flex items-start gap-6 py-6 border-b border-gray-100 hover:bg-gray-50 px-4 -mx-4 transition">
+          <div class="shrink-0">
+            <time class="text-xs tracking-widest text-gray-300 uppercase block">Mar 20, 2025</time>
+            <span class="text-xs tracking-widest uppercase mt-1 block" style="color:var(--gold)">Event</span>
+          </div>
+          <div class="flex-1">
+            <h3 class="text-sm group-hover:underline">リニューアルオープンのお礼とご報告</h3>
+            <p class="text-xs text-gray-400 mt-1">多くのお客様にご来店いただきました。改めて御礼申し上げます。</p>
+          </div>
+        </a>
+
+        <a href="#" class="group flex items-start gap-6 py-6 border-b border-gray-100 hover:bg-gray-50 px-4 -mx-4 transition">
+          <div class="shrink-0">
+            <time class="text-xs tracking-widest text-gray-300 uppercase block">Mar 05, 2025</time>
+            <span class="text-xs tracking-widest uppercase mt-1 block" style="color:var(--gold)">Collection</span>
+          </div>
+          <div class="flex-1">
+            <h3 class="text-sm group-hover:underline">新ブランド「FOLK」取り扱い開始</h3>
+            <p class="text-xs text-gray-400 mt-1">デンマーク発のサステナブルブランド「FOLK」のアイテムを新たに取り扱い開始しました。</p>
+          </div>
+        </a>
+
+        <a href="#" class="group flex items-start gap-6 py-6 border-b border-gray-100 hover:bg-gray-50 px-4 -mx-4 transition">
+          <div class="shrink-0">
+            <time class="text-xs tracking-widest text-gray-300 uppercase block">Feb 14, 2025</time>
+            <span class="text-xs tracking-widest uppercase mt-1 block" style="color:var(--gold)">Event</span>
+          </div>
+          <div class="flex-1">
+            <h3 class="text-sm group-hover:underline">バレンタイン期間限定ポップアップ開催</h3>
+            <p class="text-xs text-gray-400 mt-1">特別ラッピングサービスとギフトセットのご用意がございました。</p>
+          </div>
+        </a>
+
+        <a href="#" class="group flex items-start gap-6 py-6 hover:bg-gray-50 px-4 -mx-4 transition">
+          <div class="shrink-0">
+            <time class="text-xs tracking-widest text-gray-300 uppercase block">Jan 06, 2025</time>
+            <span class="text-xs tracking-widest uppercase mt-1 block" style="color:var(--gold)">Info</span>
+          </div>
+          <div class="flex-1">
+            <h3 class="text-sm group-hover:underline">2025年 新年のご挨拶</h3>
+            <p class="text-xs text-gray-400 mt-1">本年もBLANCをよろしくお願い申し上げます。1月8日より通常営業を再開いたします。</p>
+          </div>
+        </a>
+
+      </div>
+    </div>
+  </section>
+
+  <footer style="background:var(--dark)" class="text-gray-500 py-16">
+    <div class="max-w-6xl mx-auto px-6">
+      <div class="flex flex-col md:flex-row justify-between gap-12 mb-12">
+        <div>
+          <p class="garamond text-3xl text-white tracking-[0.2em] font-light mb-3">BLANC</p>
+          <p class="text-sm leading-relaxed">〒000-0000 ○○県○○市○○町4-5-6<br>TEL: 000-000-0001<br>11:00〜20:00（水曜定休）</p>
+        </div>
+        <div class="text-xs tracking-widest uppercase">
+          <p class="text-white mb-4">Menu</p>
+          <ul class="space-y-2.5">
+            <li><a href="index.html" class="hover:text-white transition">Top</a></li>
+            <li><a href="about.html" class="hover:text-white transition">About</a></li>
+            <li><a href="products.html" class="hover:text-white transition">Collection</a></li>
+            <li><a href="news.html" class="hover:text-white transition">News</a></li>
+            <li><a href="contact.html" class="hover:text-white transition">Contact</a></li>
+          </ul>
+        </div>
+      </div>
+      <div class="border-t border-gray-800 pt-6 flex justify-between">
+        <p class="text-xs text-gray-700">© 2025 BLANC Select Shop</p>
+        <a href="../../index.html" class="text-xs text-gray-700 hover:text-gray-400">【サンプルサイト】</a>
+      </div>
+    </div>
+  </footer>
+
+</body>
+</html>

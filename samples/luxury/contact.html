@@ -1,0 +1,156 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Contact | AURUM</title>
+  <script src="https://cdn.tailwindcss.com"></script>
+  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400;0,500;1,400;1,500&family=Noto+Sans+JP:wght@300;400&display=swap" rel="stylesheet">
+  <style>
+    :root { --gold: #c4a35a; --dark: #0d0d0d; --mid: #1a1a1a; --warm-white: #f5f0e8; }
+    body { font-family: 'Noto Sans JP', sans-serif; background: var(--dark); color: var(--warm-white); }
+    .playfair { font-family: 'Playfair Display', serif; }
+    .nav-link { color: #888; transition: color 0.3s; }
+    .nav-link:hover, .nav-link.active { color: var(--gold); }
+    input, textarea, select { outline: none; background: transparent; border: none; border-bottom: 1px solid #333; color: var(--warm-white); transition: border-color 0.3s; width: 100%; padding: 12px 0; font-size: 0.875rem; font-family: inherit; }
+    input:focus, textarea:focus, select:focus { border-bottom-color: var(--gold); }
+    input::placeholder, textarea::placeholder { color: #555; }
+    select option { background: #1a1a1a; }
+  </style>
+</head>
+<body>
+
+  <div class="border-b text-xs py-2" style="background:#111;border-color:#222;color:#555">
+    <div class="max-w-6xl mx-auto px-6">
+      <a href="../../index.html" class="hover:text-gray-300 transition">← デザイン一覧に戻る</a>
+      <span class="mx-2" style="color:#333">|</span>
+      <span style="color:#444">サンプル: Luxury — ジュエリー「AURUM」</span>
+    </div>
+  </div>
+
+  <nav class="sticky top-0 z-50 border-b" style="background:rgba(13,13,13,0.97);border-color:#222">
+    <div class="max-w-6xl mx-auto px-6 py-5 flex items-center justify-between">
+      <a href="index.html" class="playfair text-2xl tracking-[0.3em]" style="color:var(--gold)">AURUM</a>
+      <div class="hidden md:flex items-center gap-10 text-xs tracking-[0.15em] uppercase">
+        <a href="index.html" class="nav-link">Home</a>
+        <a href="about.html" class="nav-link">About</a>
+        <a href="products.html" class="nav-link">Collection</a>
+        <a href="news.html" class="nav-link">News</a>
+        <a href="contact.html" class="nav-link border px-5 py-2.5 transition hover:bg-yellow-600/10 active" style="border-color:var(--gold);color:var(--gold)">Contact</a>
+      </div>
+    </div>
+  </nav>
+
+  <section class="py-16 text-center border-b" style="border-color:#222">
+    <p class="text-xs tracking-[0.4em] uppercase mb-3" style="color:var(--gold)">Reach Us</p>
+    <h1 class="playfair text-5xl font-normal" style="color:var(--warm-white)">Contact</h1>
+  </section>
+
+  <section class="py-20" style="background:var(--mid)">
+    <div class="max-w-5xl mx-auto px-6 flex flex-col md:flex-row gap-20">
+
+      <!-- Info -->
+      <div class="md:w-64 shrink-0">
+        <div class="space-y-10 text-sm">
+          <div>
+            <p class="text-xs tracking-[0.3em] uppercase mb-3" style="color:var(--gold)">Address</p>
+            <p class="leading-relaxed" style="color:#888">〒000-0000<br>○○県○○市○○町10-11-12<br>○○ビル 2F</p>
+          </div>
+          <div>
+            <p class="text-xs tracking-[0.3em] uppercase mb-3" style="color:var(--gold)">Phone</p>
+            <p style="color:#888">000-000-0003</p>
+          </div>
+          <div>
+            <p class="text-xs tracking-[0.3em] uppercase mb-3" style="color:var(--gold)">Hours</p>
+            <p class="leading-relaxed" style="color:#888">11:00 — 20:00<br>定休日：火曜日</p>
+          </div>
+          <div>
+            <p class="text-xs tracking-[0.3em] uppercase mb-3" style="color:var(--gold)">Appointment</p>
+            <p class="text-xs leading-relaxed" style="color:#666">ベスポークのご相談は<br>ご予約をお勧めしております。<br>お電話またはフォームよりお申し込みください。</p>
+          </div>
+        </div>
+        <div class="mt-10 h-40 border flex items-center justify-center" style="border-color:#333">
+          <p class="text-xs" style="color:#444">地図がここに入ります</p>
+        </div>
+      </div>
+
+      <!-- Form -->
+      <div class="flex-1">
+        <h2 class="playfair text-2xl font-normal mb-10" style="color:var(--warm-white)">Send a Message</h2>
+        <!-- Formspree: action属性を実際のFormspreeエンドポイントに変更してください -->
+        <form action="https://formspree.io/f/XXXXXXXX" method="POST" class="space-y-8">
+          <div class="grid grid-cols-1 md:grid-cols-2 gap-8">
+            <div>
+              <label class="block text-xs tracking-[0.2em] uppercase mb-4" style="color:var(--gold)">Name <span class="text-red-600">*</span></label>
+              <input type="text" name="name" required placeholder="山田 太郎">
+            </div>
+            <div>
+              <label class="block text-xs tracking-[0.2em] uppercase mb-4" style="color:var(--gold)">Email <span class="text-red-600">*</span></label>
+              <input type="email" name="email" required placeholder="example@email.com">
+            </div>
+          </div>
+          <div>
+            <label class="block text-xs tracking-[0.2em] uppercase mb-4" style="color:var(--gold)">Phone</label>
+            <input type="tel" name="tel" placeholder="000-000-0000">
+          </div>
+          <div>
+            <label class="block text-xs tracking-[0.2em] uppercase mb-4" style="color:var(--gold)">Inquiry Type</label>
+            <select name="type">
+              <option value="">選択してください</option>
+              <option value="bespoke">ベスポーク（オーダーメイド）</option>
+              <option value="product">商品について</option>
+              <option value="repair">修理・リフォーム</option>
+              <option value="bridal">ブライダルジュエリー</option>
+              <option value="appointment">ご来店予約</option>
+              <option value="other">その他</option>
+            </select>
+          </div>
+          <div>
+            <label class="block text-xs tracking-[0.2em] uppercase mb-4" style="color:var(--gold)">Message <span class="text-red-600">*</span></label>
+            <textarea name="message" required rows="6" placeholder="ご要望・ご質問をお聞かせください" style="resize:none"></textarea>
+          </div>
+          <div class="pt-4">
+            <button type="submit"
+              class="border text-xs tracking-[0.2em] uppercase px-12 py-4 transition"
+              style="border-color:var(--gold);color:var(--gold)"
+              onmouseover="this.style.background='rgba(196,163,90,0.1)'" onmouseout="this.style.background='transparent'">
+              Send Inquiry
+            </button>
+          </div>
+          <p class="text-xs" style="color:#555">
+            ご返信は3営業日以内にメールにてお送りいたします。<br>
+            お急ぎの場合はお電話にてお問い合わせください。
+          </p>
+        </form>
+      </div>
+
+    </div>
+  </section>
+
+  <footer class="border-t py-16" style="background:#0a0a0a;border-color:#1a1a1a">
+    <div class="max-w-6xl mx-auto px-6">
+      <div class="flex flex-col md:flex-row justify-between gap-14 mb-12">
+        <div>
+          <p class="playfair text-3xl tracking-[0.3em] mb-3" style="color:var(--gold)">AURUM</p>
+          <p class="text-xs leading-loose" style="color:#555">〒000-0000 ○○県○○市○○町10-11-12<br>TEL: 000-000-0003<br>11:00〜20:00（火曜定休）</p>
+        </div>
+        <div class="text-xs tracking-[0.1em] uppercase">
+          <p class="mb-4" style="color:var(--gold)">Menu</p>
+          <ul class="space-y-3" style="color:#555">
+            <li><a href="index.html" class="hover:text-white transition">Home</a></li>
+            <li><a href="about.html" class="hover:text-white transition">About</a></li>
+            <li><a href="products.html" class="hover:text-white transition">Collection</a></li>
+            <li><a href="news.html" class="hover:text-white transition">News</a></li>
+            <li><a href="contact.html" class="hover:text-white transition">Contact</a></li>
+          </ul>
+        </div>
+      </div>
+      <div class="border-t pt-6 flex justify-between" style="border-color:#1a1a1a">
+        <p class="text-xs" style="color:#333">© 2025 AURUM Fine Jewelry</p>
+        <a href="../../index.html" class="text-xs hover:text-gray-400 transition" style="color:#333">【サンプルサイト】</a>
+      </div>
+    </div>
+  </footer>
+
+</body>
+</html>
